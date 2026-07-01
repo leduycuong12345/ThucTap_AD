@@ -1,0 +1,65 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "O:\IT\iverilog_thuctap_AD_2026\lib\ivl\system.vpi";
+:vpi_module "O:\IT\iverilog_thuctap_AD_2026\lib\ivl\vhdl_sys.vpi";
+:vpi_module "O:\IT\iverilog_thuctap_AD_2026\lib\ivl\vhdl_textio.vpi";
+:vpi_module "O:\IT\iverilog_thuctap_AD_2026\lib\ivl\v2005_math.vpi";
+:vpi_module "O:\IT\iverilog_thuctap_AD_2026\lib\ivl\va_math.vpi";
+S_000001e6f6dd9540 .scope module, "and_gate_tb_wave" "and_gate_tb_wave" 2 3;
+ .timescale -9 -12;
+v000001e6f6cf5090_0 .var "a", 0 0;
+v000001e6f6cf5130_0 .var "b", 0 0;
+v000001e6f6cf51d0_0 .net "y", 0 0, L_000001e6f6dd6a60;  1 drivers
+S_000001e6f6cf4f00 .scope module, "uut" "and_gate" 2 10, 3 1 0, S_000001e6f6dd9540;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_000001e6f6dd6a60 .functor AND 1, v000001e6f6cf5090_0, v000001e6f6cf5130_0, C4<1>, C4<1>;
+v000001e6f6dd6c80_0 .net "a", 0 0, v000001e6f6cf5090_0;  1 drivers
+v000001e6f6dd96d0_0 .net "b", 0 0, v000001e6f6cf5130_0;  1 drivers
+v000001e6f6dd9770_0 .net "y", 0 0, L_000001e6f6dd6a60;  alias, 1 drivers
+    .scope S_000001e6f6dd9540;
+T_0 ;
+    %vpi_call 2 17 "$dumpfile", "and_gate_wave.vcd" {0 0 0};
+    %vpi_call 2 18 "$dumpvars", 32'sb00000000000000000000000000000000, S_000001e6f6dd9540 {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_000001e6f6dd9540;
+T_1 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001e6f6cf5090_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001e6f6cf5130_0, 0, 1;
+    %delay 10000, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001e6f6cf5090_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001e6f6cf5130_0, 0, 1;
+    %delay 10000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001e6f6cf5090_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001e6f6cf5130_0, 0, 1;
+    %delay 10000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001e6f6cf5090_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001e6f6cf5130_0, 0, 1;
+    %delay 10000, 0;
+    %vpi_call 2 34 "$finish" {0 0 0};
+    %end;
+    .thread T_1;
+    .scope S_000001e6f6dd9540;
+T_2 ;
+    %vpi_call 2 38 "$monitor", "time=%0t a=%b b=%b y=%b", $time, v000001e6f6cf5090_0, v000001e6f6cf5130_0, v000001e6f6cf51d0_0 {0 0 0};
+    %end;
+    .thread T_2;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "and_gate_testbench_with_wave.v";
+    "and_gate.v";
