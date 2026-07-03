@@ -1,0 +1,48 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "O:\IT\iverilog_thuctap_AD_2026\lib\ivl\system.vpi";
+:vpi_module "O:\IT\iverilog_thuctap_AD_2026\lib\ivl\vhdl_sys.vpi";
+:vpi_module "O:\IT\iverilog_thuctap_AD_2026\lib\ivl\vhdl_textio.vpi";
+:vpi_module "O:\IT\iverilog_thuctap_AD_2026\lib\ivl\v2005_math.vpi";
+:vpi_module "O:\IT\iverilog_thuctap_AD_2026\lib\ivl\va_math.vpi";
+S_0000018dbfa3aef0 .scope module, "or_gate_tb_wave" "or_gate_tb_wave" 2 3;
+ .timescale -12 -12;
+v0000018dbfa85110_0 .var "a", 0 0;
+v0000018dbfa851b0_0 .net "y", 0 0, L_0000018dbfa36a40;  1 drivers
+S_0000018dbfa84ee0 .scope module, "ut" "or_gate" 2 6, 3 1 0, S_0000018dbfa3aef0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0000018dbfa36a40 .functor NOT 1, v0000018dbfa85110_0, C4<0>, C4<0>, C4<0>;
+v0000018dbfa36c60_0 .net "a", 0 0, v0000018dbfa85110_0;  1 drivers
+v0000018dbfa85070_0 .net "y", 0 0, L_0000018dbfa36a40;  alias, 1 drivers
+    .scope S_0000018dbfa3aef0;
+T_0 ;
+    %vpi_call 2 12 "$dumpfile", "or_gate_wave.vcd" {0 0 0};
+    %vpi_call 2 13 "$dumpvars", 32'sb00000000000000000000000000000000, S_0000018dbfa3aef0 {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_0000018dbfa3aef0;
+T_1 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000018dbfa85110_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000018dbfa85110_0, 0, 1;
+    %delay 10, 0;
+    %vpi_call 2 23 "$finish" {0 0 0};
+    %end;
+    .thread T_1;
+    .scope S_0000018dbfa3aef0;
+T_2 ;
+    %vpi_call 2 26 "$monitor", "time=%0t a=%b y=%b", $time, v0000018dbfa85110_0, v0000018dbfa851b0_0 {0 0 0};
+    %end;
+    .thread T_2;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "or_gate_testbench_with_wave.v";
+    "or_gate.v";

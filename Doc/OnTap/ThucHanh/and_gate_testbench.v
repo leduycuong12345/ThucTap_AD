@@ -1,10 +1,7 @@
 `timescale 1ns/1ps
-
 module and_gate_tb;
-
 reg a;
 reg b;
-
 wire y;
 
 and_gate uut(
