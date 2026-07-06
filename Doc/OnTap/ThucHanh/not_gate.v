@@ -1,4 +1,4 @@
-module or_gate(
+module not_gate(
     input a,
     output y
 );
