@@ -10,7 +10,7 @@ module multiplexer_MUX_ratio_2_to_1(
 wire out1;
 not_gate not1(
     .a(sel),
-    .out(out1)
+    .y(out1)
 );
 wire s1,s2;
 and_gate and1(

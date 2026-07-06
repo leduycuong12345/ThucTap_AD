@@ -1,6 +1,6 @@
 `timescale 1ps/1ps
 
-module or_gate_tb_wave;
+module not_gate_tb_wave;
 reg a;
 wire y;
 not_gate ut(
@@ -10,7 +10,7 @@ not_gate ut(
 
 initial begin
     $dumpfile("not_gate_wave.vcd");
-    $dumpvars(0,or_gate_tb_wave);
+    $dumpvars(0,not_gate_tb_wave);
 end 
 
 initial begin

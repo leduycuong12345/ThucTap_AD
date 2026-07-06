@@ -1,0 +1,65 @@
+#! /usr/bin/vvp
+:ivl_version "12.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x6283b8911240 .scope module, "or_gate_tb" "or_gate_tb" 2 2;
+ .timescale -12 -12;
+v0x6283b89245e0_0 .var "a", 0 0;
+v0x6283b89246b0_0 .var "b", 0 0;
+v0x6283b8924780_0 .net "y", 0 0, L_0x6283b8924880;  1 drivers
+S_0x6283b89113d0 .scope module, "ut" "or_gate" 2 6, 3 1 0, S_0x6283b8911240;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x6283b8924880 .functor OR 1, v0x6283b89245e0_0, v0x6283b89246b0_0, C4<0>, C4<0>;
+v0x6283b8911600_0 .net "a", 0 0, v0x6283b89245e0_0;  1 drivers
+v0x6283b8924400_0 .net "b", 0 0, v0x6283b89246b0_0;  1 drivers
+v0x6283b89244c0_0 .net "y", 0 0, L_0x6283b8924880;  alias, 1 drivers
+    .scope S_0x6283b8911240;
+T_0 ;
+    %vpi_call 2 12 "$dumpfile", "or_gate_wave.vcd" {0 0 0};
+    %vpi_call 2 13 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x6283b8911240 {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_0x6283b8911240;
+T_1 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x6283b89245e0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x6283b89246b0_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x6283b89245e0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x6283b89246b0_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x6283b89245e0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x6283b89246b0_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x6283b89245e0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x6283b89246b0_0, 0, 1;
+    %delay 10, 0;
+    %vpi_call 2 32 "$finish" {0 0 0};
+    %end;
+    .thread T_1;
+    .scope S_0x6283b8911240;
+T_2 ;
+    %vpi_call 2 35 "$monitor", "time=%0t a=%b b=%b y=%b", $time, v0x6283b89245e0_0, v0x6283b89246b0_0, v0x6283b8924780_0 {0 0 0};
+    %end;
+    .thread T_2;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "or_gate_testbench.v";
+    "or_gate.v";

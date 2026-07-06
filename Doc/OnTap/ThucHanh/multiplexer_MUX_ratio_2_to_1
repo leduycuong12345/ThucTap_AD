@@ -1,0 +1,143 @@
+#! /usr/bin/vvp
+:ivl_version "12.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x56acc4759490 .scope module, "multiplexer_MUX_ratio_2_to_1_tb" "multiplexer_MUX_ratio_2_to_1_tb" 2 2;
+ .timescale -12 -12;
+v0x56acc47b0b90_0 .var "a", 0 0;
+v0x56acc47b0ca0_0 .var "b", 0 0;
+v0x56acc47b0db0_0 .net "out", 0 0, L_0x56acc47b1110;  1 drivers
+v0x56acc47b0ea0_0 .var "sel", 0 0;
+S_0x56acc4759620 .scope module, "uut" "multiplexer_MUX_ratio_2_to_1" 2 7, 3 1 0, S_0x56acc4759490;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /INPUT 1 "sel";
+    .port_info 3 /OUTPUT 1 "out";
+v0x56acc47b04e0_0 .net "a", 0 0, v0x56acc47b0b90_0;  1 drivers
+v0x56acc47b05b0_0 .net "b", 0 0, v0x56acc47b0ca0_0;  1 drivers
+v0x56acc47b0680_0 .net "out", 0 0, L_0x56acc47b1110;  alias, 1 drivers
+v0x56acc47b0780_0 .net "out1", 0 0, L_0x56acc47b0f40;  1 drivers
+v0x56acc47b0870_0 .net "s1", 0 0, L_0x56acc47b0fb0;  1 drivers
+v0x56acc47b09b0_0 .net "s2", 0 0, L_0x56acc47b1060;  1 drivers
+v0x56acc47b0aa0_0 .net "sel", 0 0, v0x56acc47b0ea0_0;  1 drivers
+S_0x56acc4793840 .scope module, "and1" "and_gate" 3 16, 4 1 0, S_0x56acc4759620;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x56acc47b0fb0 .functor AND 1, v0x56acc47b0b90_0, L_0x56acc47b0f40, C4<1>, C4<1>;
+v0x56acc479b260_0 .net "a", 0 0, v0x56acc47b0b90_0;  alias, 1 drivers
+v0x56acc4759870_0 .net "b", 0 0, L_0x56acc47b0f40;  alias, 1 drivers
+v0x56acc4794240_0 .net "y", 0 0, L_0x56acc47b0fb0;  alias, 1 drivers
+S_0x56acc47af780 .scope module, "and2" "and_gate" 3 21, 4 1 0, S_0x56acc4759620;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x56acc47b1060 .functor AND 1, v0x56acc47b0ca0_0, v0x56acc47b0ea0_0, C4<1>, C4<1>;
+v0x56acc47af9b0_0 .net "a", 0 0, v0x56acc47b0ca0_0;  alias, 1 drivers
+v0x56acc47afa90_0 .net "b", 0 0, v0x56acc47b0ea0_0;  alias, 1 drivers
+v0x56acc47afb50_0 .net "y", 0 0, L_0x56acc47b1060;  alias, 1 drivers
+S_0x56acc47afc70 .scope module, "not1" "not_gate" 3 11, 5 1 0, S_0x56acc4759620;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x56acc47b0f40 .functor NOT 1, v0x56acc47b0ea0_0, C4<0>, C4<0>, C4<0>;
+v0x56acc47afe50_0 .net "a", 0 0, v0x56acc47b0ea0_0;  alias, 1 drivers
+v0x56acc47afef0_0 .net "y", 0 0, L_0x56acc47b0f40;  alias, 1 drivers
+S_0x56acc47affe0 .scope module, "or1" "or_gate" 3 26, 6 1 0, S_0x56acc4759620;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x56acc47b1110 .functor OR 1, L_0x56acc47b0fb0, L_0x56acc47b1060, C4<0>, C4<0>;
+v0x56acc47b0210_0 .net "a", 0 0, L_0x56acc47b0fb0;  alias, 1 drivers
+v0x56acc47b0300_0 .net "b", 0 0, L_0x56acc47b1060;  alias, 1 drivers
+v0x56acc47b03d0_0 .net "y", 0 0, L_0x56acc47b1110;  alias, 1 drivers
+    .scope S_0x56acc4759490;
+T_0 ;
+    %vpi_call 2 15 "$dumpfile", "multiplexer_MUX_ratio_2_to_1.vcd" {0 0 0};
+    %vpi_call 2 16 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x56acc4759490 {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_0x56acc4759490;
+T_1 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x56acc47b0b90_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x56acc47b0ca0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x56acc47b0ea0_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x56acc47b0b90_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x56acc47b0ca0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x56acc47b0ea0_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x56acc47b0b90_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x56acc47b0ca0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x56acc47b0ea0_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x56acc47b0b90_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x56acc47b0ca0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x56acc47b0ea0_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x56acc47b0b90_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x56acc47b0ca0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x56acc47b0ea0_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x56acc47b0b90_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x56acc47b0ca0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x56acc47b0ea0_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x56acc47b0b90_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x56acc47b0ca0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x56acc47b0ea0_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x56acc47b0b90_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x56acc47b0ca0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x56acc47b0ea0_0, 0, 1;
+    %delay 10, 0;
+    %vpi_call 2 35 "$finish" {0 0 0};
+    %end;
+    .thread T_1;
+    .scope S_0x56acc4759490;
+T_2 ;
+    %vpi_call 2 38 "$monitor", "time=%0t a=%b b=%b sel=%b out=%b", $time, v0x56acc47b0b90_0, v0x56acc47b0ca0_0, v0x56acc47b0ea0_0, v0x56acc47b0db0_0 {0 0 0};
+    %end;
+    .thread T_2;
+# The file index is used to find the file name in the following table.
+:file_names 7;
+    "N/A";
+    "<interactive>";
+    "multiplexer_MUX_ratio_2_to_1_testbench.v";
+    "multiplexer_MUX_ratio_2_to_1.v";
+    "and_gate.v";
+    "not_gate.v";
+    "or_gate.v";
