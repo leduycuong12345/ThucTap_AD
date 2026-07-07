@@ -1,0 +1,83 @@
+#! /usr/bin/vvp
+:ivl_version "12.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x616952944a00 .scope module, "comparator_1bit_tb" "comparator_1bit_tb" 2 2;
+ .timescale -9 -12;
+v0x61695295af40_0 .var "a", 0 0;
+v0x61695295b030_0 .var "b", 0 0;
+v0x61695295b140_0 .net "equal", 0 0, L_0x61695295b2a0;  1 drivers
+S_0x616952944b90 .scope module, "uut" "comparator_1bit" 2 6, 3 1 0, S_0x616952944a00;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x61695295abb0_0 .net "a", 0 0, v0x61695295af40_0;  1 drivers
+v0x61695295ac80_0 .net "b", 0 0, v0x61695295b030_0;  1 drivers
+v0x61695295ad50_0 .net "equal", 0 0, L_0x61695295b2a0;  alias, 1 drivers
+v0x61695295ae50_0 .net "out1", 0 0, L_0x61695295b230;  1 drivers
+S_0x616952948a00 .scope module, "not1" "not_gate" 3 12, 4 1 0, S_0x616952944b90;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x61695295b2a0 .functor NOT 1, L_0x61695295b230, C4<0>, C4<0>, C4<0>;
+v0x616952949040_0 .net "a", 0 0, L_0x61695295b230;  alias, 1 drivers
+v0x61695295a5e0_0 .net "y", 0 0, L_0x61695295b2a0;  alias, 1 drivers
+S_0x61695295a700 .scope module, "xor1" "xor_gate" 3 7, 5 1 0, S_0x616952944b90;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x61695295b230 .functor XOR 1, v0x61695295af40_0, v0x61695295b030_0, C4<0>, C4<0>;
+v0x61695295a930_0 .net "a", 0 0, v0x61695295af40_0;  alias, 1 drivers
+v0x61695295aa10_0 .net "b", 0 0, v0x61695295b030_0;  alias, 1 drivers
+v0x61695295aad0_0 .net "y", 0 0, L_0x61695295b230;  alias, 1 drivers
+    .scope S_0x616952944a00;
+T_0 ;
+    %vpi_call 2 12 "$dumpfile", "comparator_1bit.vcd" {0 0 0};
+    %vpi_call 2 13 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x616952944a00 {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_0x616952944a00;
+T_1 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x61695295af40_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x61695295b030_0, 0, 1;
+    %delay 10000, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x61695295af40_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x61695295b030_0, 0, 1;
+    %delay 10000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x61695295af40_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x61695295b030_0, 0, 1;
+    %delay 10000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x61695295af40_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x61695295b030_0, 0, 1;
+    %delay 10000, 0;
+    %vpi_call 2 24 "$finish" {0 0 0};
+    %end;
+    .thread T_1;
+    .scope S_0x616952944a00;
+T_2 ;
+    %vpi_call 2 27 "$monitor", "time=%0t a=%b b=%b equal=%b", $time, v0x61695295af40_0, v0x61695295b030_0, v0x61695295b140_0 {0 0 0};
+    %end;
+    .thread T_2;
+# The file index is used to find the file name in the following table.
+:file_names 6;
+    "N/A";
+    "<interactive>";
+    "comparator_1bit_testbench.v";
+    "comparator_1bit.v";
+    "not_gate.v";
+    "xor_gate.v";

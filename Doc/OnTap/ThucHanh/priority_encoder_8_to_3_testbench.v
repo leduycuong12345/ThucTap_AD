@@ -1,16 +1,15 @@
 `timescale 1ps/1ps
-module encoder_8_to_3_tb;
+module priority_encoder_8_to_3_tb;
 reg [7:0] a;
 wire [2:0] y;
-encoder_8_to_3 ut(
+priority_encoder_8_to_3 ut(
     .a(a),
     .y(y)
 );
 initial begin
-    $dumpfile("encoder_8_to_3_wave.vcd");
-    $dumpvars(0,encoder_8_to_3_tb);
+    $dumpfile("priority_encoder_8_to_3_wave.vcd");
+    $dumpvars(0,priority_encoder_8_to_3_tb);
 end
-/*
 initial begin
     a=8'b00000000;
     #10;
@@ -562,24 +561,9 @@ initial begin
     #10;
     $finish;
 end
-*/
-
 
 initial begin
-    a = 8'b00000001; #10;
-    a = 8'b00000010; #10;
-    a = 8'b00000100; #10;
-    a = 8'b00001000; #10;
-    a = 8'b00010000; #10;
-    a = 8'b00100000; #10;
-    a = 8'b01000000; #10;
-    a = 8'b10000000; #10;
-
-    $finish;
-end
-
-initial begin
-    $monitor("time=%0t a=%b y=%b",
-                    $time,a,y);
+    $monitor("time=%0t a=%b y=%b"
+        ,$time,a,y);
 end
 endmodule
