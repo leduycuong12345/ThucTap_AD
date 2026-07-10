@@ -1,0 +1,49 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Trang-1" id="QYQsskxyoQHysQkl7jIM">
+    <mxGraphModel dx="692" dy="668" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="7OPrVfliHA_17zZ2CCD2-3" edge="1" parent="1" source="7OPrVfliHA_17zZ2CCD2-1" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" target="7OPrVfliHA_17zZ2CCD2-2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7OPrVfliHA_17zZ2CCD2-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Gói tin packet tới" vertex="1">
+          <mxGeometry height="60" width="120" x="320" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7OPrVfliHA_17zZ2CCD2-5" edge="1" parent="1" source="7OPrVfliHA_17zZ2CCD2-2" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" target="7OPrVfliHA_17zZ2CCD2-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7OPrVfliHA_17zZ2CCD2-2" parent="1" style="whiteSpace=wrap;html=1;rounded=1;" value="Tạo search key" vertex="1">
+          <mxGeometry height="60" width="120" x="320" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="7OPrVfliHA_17zZ2CCD2-7" edge="1" parent="1" source="7OPrVfliHA_17zZ2CCD2-4" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" target="7OPrVfliHA_17zZ2CCD2-6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7OPrVfliHA_17zZ2CCD2-4" parent="1" style="whiteSpace=wrap;html=1;rounded=1;" value="So sánh với Rule-Table trong Sram-based-TRAM" vertex="1">
+          <mxGeometry height="60" width="120" x="320" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="7OPrVfliHA_17zZ2CCD2-9" edge="1" parent="1" source="7OPrVfliHA_17zZ2CCD2-6" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" target="7OPrVfliHA_17zZ2CCD2-8" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7OPrVfliHA_17zZ2CCD2-6" parent="1" style="whiteSpace=wrap;html=1;rounded=1;" value="Tìm rule nào match" vertex="1">
+          <mxGeometry height="60" width="120" x="320" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="7OPrVfliHA_17zZ2CCD2-11" edge="1" parent="1" source="7OPrVfliHA_17zZ2CCD2-8" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="7OPrVfliHA_17zZ2CCD2-10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7OPrVfliHA_17zZ2CCD2-8" parent="1" style="whiteSpace=wrap;html=1;rounded=1;" value="Lọc với Priority-Encoder" vertex="1">
+          <mxGeometry height="60" width="120" x="320" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="7OPrVfliHA_17zZ2CCD2-13" edge="1" parent="1" source="7OPrVfliHA_17zZ2CCD2-10" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" target="7OPrVfliHA_17zZ2CCD2-12" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7OPrVfliHA_17zZ2CCD2-10" parent="1" style="whiteSpace=wrap;html=1;rounded=1;" value="Xuất Ruld-ID" vertex="1">
+          <mxGeometry height="60" width="120" x="320" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="7OPrVfliHA_17zZ2CCD2-12" parent="1" style="whiteSpace=wrap;html=1;rounded=1;" value="Hệ thống quyết định : Forward/Drop/QoS/ACL" vertex="1">
+          <mxGeometry height="60" width="190" x="285" y="560" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
