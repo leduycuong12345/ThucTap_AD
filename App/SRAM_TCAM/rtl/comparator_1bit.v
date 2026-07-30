@@ -1,3 +1,6 @@
+`include "not_gate.v"
+`include "xor_gate.v"
+
 module comparator_1bit(
     input a,
     input b,

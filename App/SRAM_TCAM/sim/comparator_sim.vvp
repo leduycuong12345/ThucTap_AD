@@ -1,0 +1,34 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "O:\IT\iverilog_thuctap_AD_2026\lib\ivl\system.vpi";
+:vpi_module "O:\IT\iverilog_thuctap_AD_2026\lib\ivl\vhdl_sys.vpi";
+:vpi_module "O:\IT\iverilog_thuctap_AD_2026\lib\ivl\vhdl_textio.vpi";
+:vpi_module "O:\IT\iverilog_thuctap_AD_2026\lib\ivl\v2005_math.vpi";
+:vpi_module "O:\IT\iverilog_thuctap_AD_2026\lib\ivl\va_math.vpi";
+S_000001ef1de75810 .scope module, "not_gate" "not_gate" 2 1;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+o000001ef1de76fd8 .functor BUFZ 1, C4<z>; HiZ drive
+L_000001ef1de76ef0 .functor NOT 1, o000001ef1de76fd8, C4<0>, C4<0>, C4<0>;
+v000001ef1de43580_0 .net "a", 0 0, o000001ef1de76fd8;  0 drivers
+v000001ef1de430e0_0 .net "y", 0 0, L_000001ef1de76ef0;  1 drivers
+S_000001ef1de759a0 .scope module, "xor_gate" "xor_gate" 3 1;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+o000001ef1de77098 .functor BUFZ 1, C4<z>; HiZ drive
+o000001ef1de770c8 .functor BUFZ 1, C4<z>; HiZ drive
+L_000001ef1de43360 .functor XOR 1, o000001ef1de77098, o000001ef1de770c8, C4<0>, C4<0>;
+v000001ef1de76e50_0 .net "a", 0 0, o000001ef1de77098;  0 drivers
+v000001ef1de75b30_0 .net "b", 0 0, o000001ef1de770c8;  0 drivers
+v000001ef1de75bd0_0 .net "y", 0 0, L_000001ef1de43360;  1 drivers
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "rtl/not_gate.v";
+    "rtl/xor_gate.v";
