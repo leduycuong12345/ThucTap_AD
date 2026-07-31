@@ -1,7 +1,7 @@
 `timescale 1ps/1ps
 
-`include "../rtl/tcam_params.vh"
-`include "../rtl/comparator_nbit.v"
+`include "rtl/tcam_params.vh"
+`include "rtl/comparator_nbit.v"
 module comparator_tb;
 
 reg [`SEARCH_KEY_WIDTH-1:0] a;

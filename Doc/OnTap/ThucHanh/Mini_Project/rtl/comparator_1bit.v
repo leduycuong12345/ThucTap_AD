@@ -1,5 +1,5 @@
-`include "not_gate.v"
-`include "xor_gate.v"
+`include "rtl/not_gate.v"
+`include "rtl/xor_gate.v"
 
 module comparator_1bit(
     input a,

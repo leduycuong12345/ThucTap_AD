@@ -1,10 +1,6 @@
-`include "rtl/comparator_1bit.v"
-`include "rtl/tcam_params.vh"
-
 module comparator_n_bit #(
-    parameter WIDTH = `SEARCH_KEY_WIDTH
-)
-(
+    parameter WIDTH = 8
+)(
     input  [WIDTH-1:0] a,
     input  [WIDTH-1:0] b,
     output equal
@@ -13,13 +9,13 @@ wire [WIDTH-1:0] equal_bit;
 genvar i;
 generate 
     for(i =0;i<WIDTH;i=i+1) begin : cmp 
-        comparator_1bit u_cmp( 
+        compearator_1bit u_cmp( 
             .a(a[i]),
-             .b(b[i]), 
+             .b(a[i]), 
              .equal(equal_bit[i]) 
         ); 
         
     end 
 endgenerate 
-assign equal=&equal_bit;
+ssign equal=&equal_bit;
 endmodule
