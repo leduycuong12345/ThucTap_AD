@@ -1,0 +1,2765 @@
+#! /usr/bin/vvp
+:ivl_version "12.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x637c6870e200 .scope module, "comparator_tb" "comparator_tb" 2 5;
+ .timescale -12 -12;
+v0x637c6875e8e0_0 .var "a", 87 0;
+v0x637c6875e9d0_0 .var "b", 87 0;
+v0x637c6875eaa0_0 .net "equal", 0 0, L_0x637c6877c480;  1 drivers
+S_0x637c68705600 .scope module, "dut" "comparator_n_bit" 2 11, 3 4 0, S_0x637c6870e200;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 88 "a";
+    .port_info 1 /INPUT 88 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+P_0x637c686e9cc0 .param/l "WIDTH" 0 3 5, +C4<00000000000000000000000001011000>;
+v0x637c6875e520_0 .net "a", 87 0, v0x637c6875e8e0_0;  1 drivers
+v0x637c6875e600_0 .net "b", 87 0, v0x637c6875e9d0_0;  1 drivers
+v0x637c6875e6e0_0 .net "equal", 0 0, L_0x637c6877c480;  alias, 1 drivers
+v0x637c6875e780_0 .net "equal_bit", 87 0, L_0x637c6877c3e0;  1 drivers
+L_0x637c6875ed90 .part v0x637c6875e8e0_0, 0, 1;
+L_0x637c6875ee50 .part v0x637c6875e9d0_0, 0, 1;
+L_0x637c6875f190 .part v0x637c6875e8e0_0, 1, 1;
+L_0x637c6875f230 .part v0x637c6875e9d0_0, 1, 1;
+L_0x637c6875f4b0 .part v0x637c6875e8e0_0, 2, 1;
+L_0x637c6875f550 .part v0x637c6875e9d0_0, 2, 1;
+L_0x637c6875f820 .part v0x637c6875e8e0_0, 3, 1;
+L_0x637c6875f8c0 .part v0x637c6875e9d0_0, 3, 1;
+L_0x637c6875fc40 .part v0x637c6875e8e0_0, 4, 1;
+L_0x637c6875fce0 .part v0x637c6875e9d0_0, 4, 1;
+L_0x637c68760020 .part v0x637c6875e8e0_0, 5, 1;
+L_0x637c687600c0 .part v0x637c6875e9d0_0, 5, 1;
+L_0x637c68760460 .part v0x637c6875e8e0_0, 6, 1;
+L_0x637c68760500 .part v0x637c6875e9d0_0, 6, 1;
+L_0x637c687607b0 .part v0x637c6875e8e0_0, 7, 1;
+L_0x637c68760850 .part v0x637c6875e9d0_0, 7, 1;
+L_0x637c68760b80 .part v0x637c6875e8e0_0, 8, 1;
+L_0x637c68760c20 .part v0x637c6875e9d0_0, 8, 1;
+L_0x637c68760f60 .part v0x637c6875e8e0_0, 9, 1;
+L_0x637c68761000 .part v0x637c6875e9d0_0, 9, 1;
+L_0x637c68760cc0 .part v0x637c6875e8e0_0, 10, 1;
+L_0x637c687613e0 .part v0x637c6875e9d0_0, 10, 1;
+L_0x637c687617d0 .part v0x637c6875e8e0_0, 11, 1;
+L_0x637c68761870 .part v0x637c6875e9d0_0, 11, 1;
+L_0x637c68761c70 .part v0x637c6875e8e0_0, 12, 1;
+L_0x637c68761d10 .part v0x637c6875e9d0_0, 12, 1;
+L_0x637c68762120 .part v0x637c6875e8e0_0, 13, 1;
+L_0x637c687621c0 .part v0x637c6875e9d0_0, 13, 1;
+L_0x637c687625e0 .part v0x637c6875e8e0_0, 14, 1;
+L_0x637c68762680 .part v0x637c6875e9d0_0, 14, 1;
+L_0x637c68762cc0 .part v0x637c6875e8e0_0, 15, 1;
+L_0x637c68762d60 .part v0x637c6875e9d0_0, 15, 1;
+L_0x637c687631a0 .part v0x637c6875e8e0_0, 16, 1;
+L_0x637c68763240 .part v0x637c6875e9d0_0, 16, 1;
+L_0x637c687636e0 .part v0x637c6875e8e0_0, 17, 1;
+L_0x637c68763780 .part v0x637c6875e9d0_0, 17, 1;
+L_0x637c68763ac0 .part v0x637c6875e8e0_0, 18, 1;
+L_0x637c68763b60 .part v0x637c6875e9d0_0, 18, 1;
+L_0x637c68763fd0 .part v0x637c6875e8e0_0, 19, 1;
+L_0x637c68764070 .part v0x637c6875e9d0_0, 19, 1;
+L_0x637c687644f0 .part v0x637c6875e8e0_0, 20, 1;
+L_0x637c68764590 .part v0x637c6875e9d0_0, 20, 1;
+L_0x637c68764a20 .part v0x637c6875e8e0_0, 21, 1;
+L_0x637c68764ac0 .part v0x637c6875e9d0_0, 21, 1;
+L_0x637c68764f60 .part v0x637c6875e8e0_0, 22, 1;
+L_0x637c68765000 .part v0x637c6875e9d0_0, 22, 1;
+L_0x637c687654b0 .part v0x637c6875e8e0_0, 23, 1;
+L_0x637c68765550 .part v0x637c6875e9d0_0, 23, 1;
+L_0x637c68765a10 .part v0x637c6875e8e0_0, 24, 1;
+L_0x637c68765ab0 .part v0x637c6875e9d0_0, 24, 1;
+L_0x637c68765f80 .part v0x637c6875e8e0_0, 25, 1;
+L_0x637c68766020 .part v0x637c6875e9d0_0, 25, 1;
+L_0x637c68766500 .part v0x637c6875e8e0_0, 26, 1;
+L_0x637c687665a0 .part v0x637c6875e9d0_0, 26, 1;
+L_0x637c68766a90 .part v0x637c6875e8e0_0, 27, 1;
+L_0x637c68766b30 .part v0x637c6875e9d0_0, 27, 1;
+L_0x637c68767030 .part v0x637c6875e8e0_0, 28, 1;
+L_0x637c687670d0 .part v0x637c6875e9d0_0, 28, 1;
+L_0x637c687675e0 .part v0x637c6875e8e0_0, 29, 1;
+L_0x637c68767680 .part v0x637c6875e9d0_0, 29, 1;
+L_0x637c68767ba0 .part v0x637c6875e8e0_0, 30, 1;
+L_0x637c68768050 .part v0x637c6875e9d0_0, 30, 1;
+L_0x637c687688a0 .part v0x637c6875e8e0_0, 31, 1;
+L_0x637c68768940 .part v0x637c6875e9d0_0, 31, 1;
+L_0x637c68768e00 .part v0x637c6875e8e0_0, 32, 1;
+L_0x637c68768ea0 .part v0x637c6875e9d0_0, 32, 1;
+L_0x637c68769370 .part v0x637c6875e8e0_0, 33, 1;
+L_0x637c68769410 .part v0x637c6875e9d0_0, 33, 1;
+L_0x637c687698f0 .part v0x637c6875e8e0_0, 34, 1;
+L_0x637c68769990 .part v0x637c6875e9d0_0, 34, 1;
+L_0x637c68769e80 .part v0x637c6875e8e0_0, 35, 1;
+L_0x637c68769f20 .part v0x637c6875e9d0_0, 35, 1;
+L_0x637c6876a420 .part v0x637c6875e8e0_0, 36, 1;
+L_0x637c6876a4c0 .part v0x637c6875e9d0_0, 36, 1;
+L_0x637c6876a9d0 .part v0x637c6875e8e0_0, 37, 1;
+L_0x637c6876aa70 .part v0x637c6875e9d0_0, 37, 1;
+L_0x637c6876af90 .part v0x637c6875e8e0_0, 38, 1;
+L_0x637c6876b030 .part v0x637c6875e9d0_0, 38, 1;
+L_0x637c6876b560 .part v0x637c6875e8e0_0, 39, 1;
+L_0x637c6876b600 .part v0x637c6875e9d0_0, 39, 1;
+L_0x637c6876bb40 .part v0x637c6875e8e0_0, 40, 1;
+L_0x637c6876bbe0 .part v0x637c6875e9d0_0, 40, 1;
+L_0x637c6876c130 .part v0x637c6875e8e0_0, 41, 1;
+L_0x637c6876c1d0 .part v0x637c6875e9d0_0, 41, 1;
+L_0x637c6876c730 .part v0x637c6875e8e0_0, 42, 1;
+L_0x637c6876c7d0 .part v0x637c6875e9d0_0, 42, 1;
+L_0x637c6876cd40 .part v0x637c6875e8e0_0, 43, 1;
+L_0x637c6876cde0 .part v0x637c6875e9d0_0, 43, 1;
+L_0x637c6876d360 .part v0x637c6875e8e0_0, 44, 1;
+L_0x637c6876d400 .part v0x637c6875e9d0_0, 44, 1;
+L_0x637c6876d990 .part v0x637c6875e8e0_0, 45, 1;
+L_0x637c6876da30 .part v0x637c6875e9d0_0, 45, 1;
+L_0x637c6876dfd0 .part v0x637c6875e8e0_0, 46, 1;
+L_0x637c6876e070 .part v0x637c6875e9d0_0, 46, 1;
+L_0x637c6876e620 .part v0x637c6875e8e0_0, 47, 1;
+L_0x637c6876e6c0 .part v0x637c6875e9d0_0, 47, 1;
+L_0x637c6876ec80 .part v0x637c6875e8e0_0, 48, 1;
+L_0x637c6876ed20 .part v0x637c6875e9d0_0, 48, 1;
+L_0x637c6876f2f0 .part v0x637c6875e8e0_0, 49, 1;
+L_0x637c6876f390 .part v0x637c6875e9d0_0, 49, 1;
+L_0x637c6876f970 .part v0x637c6875e8e0_0, 50, 1;
+L_0x637c6876fa10 .part v0x637c6875e9d0_0, 50, 1;
+L_0x637c68770000 .part v0x637c6875e8e0_0, 51, 1;
+L_0x637c687700a0 .part v0x637c6875e9d0_0, 51, 1;
+L_0x637c68770700 .part v0x637c6875e8e0_0, 52, 1;
+L_0x637c687707a0 .part v0x637c6875e9d0_0, 52, 1;
+L_0x637c68770e30 .part v0x637c6875e8e0_0, 53, 1;
+L_0x637c68770ed0 .part v0x637c6875e9d0_0, 53, 1;
+L_0x637c68771570 .part v0x637c6875e8e0_0, 54, 1;
+L_0x637c68771610 .part v0x637c6875e9d0_0, 54, 1;
+L_0x637c68771cc0 .part v0x637c6875e8e0_0, 55, 1;
+L_0x637c68771d60 .part v0x637c6875e9d0_0, 55, 1;
+L_0x637c68772420 .part v0x637c6875e8e0_0, 56, 1;
+L_0x637c687724c0 .part v0x637c6875e9d0_0, 56, 1;
+L_0x637c68772b90 .part v0x637c6875e8e0_0, 57, 1;
+L_0x637c68772c30 .part v0x637c6875e9d0_0, 57, 1;
+L_0x637c68773310 .part v0x637c6875e8e0_0, 58, 1;
+L_0x637c687733b0 .part v0x637c6875e9d0_0, 58, 1;
+L_0x637c68773aa0 .part v0x637c6875e8e0_0, 59, 1;
+L_0x637c68773b40 .part v0x637c6875e9d0_0, 59, 1;
+L_0x637c68774240 .part v0x637c6875e8e0_0, 60, 1;
+L_0x637c687742e0 .part v0x637c6875e9d0_0, 60, 1;
+L_0x637c687749f0 .part v0x637c6875e8e0_0, 61, 1;
+L_0x637c68774a90 .part v0x637c6875e9d0_0, 61, 1;
+L_0x637c687751b0 .part v0x637c6875e8e0_0, 62, 1;
+L_0x637c68775a60 .part v0x637c6875e9d0_0, 62, 1;
+L_0x637c68776920 .part v0x637c6875e8e0_0, 63, 1;
+L_0x637c687769c0 .part v0x637c6875e9d0_0, 63, 1;
+L_0x637c68777080 .part v0x637c6875e8e0_0, 64, 1;
+L_0x637c68777120 .part v0x637c6875e9d0_0, 64, 1;
+L_0x637c687777f0 .part v0x637c6875e8e0_0, 65, 1;
+L_0x637c68777890 .part v0x637c6875e9d0_0, 65, 1;
+L_0x637c68777450 .part v0x637c6875e8e0_0, 66, 1;
+L_0x637c687774f0 .part v0x637c6875e9d0_0, 66, 1;
+L_0x637c68777f30 .part v0x637c6875e8e0_0, 67, 1;
+L_0x637c68777fd0 .part v0x637c6875e9d0_0, 67, 1;
+L_0x637c68777bc0 .part v0x637c6875e8e0_0, 68, 1;
+L_0x637c68777c60 .part v0x637c6875e9d0_0, 68, 1;
+L_0x637c68778670 .part v0x637c6875e8e0_0, 69, 1;
+L_0x637c68778710 .part v0x637c6875e9d0_0, 69, 1;
+L_0x637c68778300 .part v0x637c6875e8e0_0, 70, 1;
+L_0x637c687783a0 .part v0x637c6875e9d0_0, 70, 1;
+L_0x637c68778dd0 .part v0x637c6875e8e0_0, 71, 1;
+L_0x637c68778e70 .part v0x637c6875e9d0_0, 71, 1;
+L_0x637c68778a40 .part v0x637c6875e8e0_0, 72, 1;
+L_0x637c68778ae0 .part v0x637c6875e9d0_0, 72, 1;
+L_0x637c68779550 .part v0x637c6875e8e0_0, 73, 1;
+L_0x637c687795f0 .part v0x637c6875e9d0_0, 73, 1;
+L_0x637c687791a0 .part v0x637c6875e8e0_0, 74, 1;
+L_0x637c68779240 .part v0x637c6875e9d0_0, 74, 1;
+L_0x637c68779cf0 .part v0x637c6875e8e0_0, 75, 1;
+L_0x637c68779d90 .part v0x637c6875e9d0_0, 75, 1;
+L_0x637c68779920 .part v0x637c6875e8e0_0, 76, 1;
+L_0x637c687799c0 .part v0x637c6875e9d0_0, 76, 1;
+L_0x637c6877a460 .part v0x637c6875e8e0_0, 77, 1;
+L_0x637c6877a500 .part v0x637c6875e9d0_0, 77, 1;
+L_0x637c6877a0c0 .part v0x637c6875e8e0_0, 78, 1;
+L_0x637c6877a160 .part v0x637c6875e9d0_0, 78, 1;
+L_0x637c6877abf0 .part v0x637c6875e8e0_0, 79, 1;
+L_0x637c6877ac90 .part v0x637c6875e9d0_0, 79, 1;
+L_0x637c6877a830 .part v0x637c6875e8e0_0, 80, 1;
+L_0x637c6877a8d0 .part v0x637c6875e9d0_0, 80, 1;
+L_0x637c6877b3a0 .part v0x637c6875e8e0_0, 81, 1;
+L_0x637c6877b440 .part v0x637c6875e9d0_0, 81, 1;
+L_0x637c6877afc0 .part v0x637c6875e8e0_0, 82, 1;
+L_0x637c6877b060 .part v0x637c6875e9d0_0, 82, 1;
+L_0x637c6877bb20 .part v0x637c6875e8e0_0, 83, 1;
+L_0x637c6877bbc0 .part v0x637c6875e9d0_0, 83, 1;
+L_0x637c6877b770 .part v0x637c6875e8e0_0, 84, 1;
+L_0x637c6877b810 .part v0x637c6875e9d0_0, 84, 1;
+L_0x637c6877c2a0 .part v0x637c6875e8e0_0, 85, 1;
+L_0x637c6877c340 .part v0x637c6875e9d0_0, 85, 1;
+L_0x637c6877bef0 .part v0x637c6875e8e0_0, 86, 1;
+L_0x637c6877bf90 .part v0x637c6875e9d0_0, 86, 1;
+L_0x637c6877ca40 .part v0x637c6875e8e0_0, 87, 1;
+L_0x637c6877cae0 .part v0x637c6875e9d0_0, 87, 1;
+LS_0x637c6877c3e0_0_0 .concat8 [ 1 1 1 1], L_0x637c6875ecb0, L_0x637c6875f090, L_0x637c6875f3b0, L_0x637c6875f6e0;
+LS_0x637c6877c3e0_0_4 .concat8 [ 1 1 1 1], L_0x637c6875fab0, L_0x637c6875fe90, L_0x637c687602d0, L_0x637c687606b0;
+LS_0x637c6877c3e0_0_8 .concat8 [ 1 1 1 1], L_0x637c68760a80, L_0x637c68760e60, L_0x637c68761250, L_0x637c68761640;
+LS_0x637c6877c3e0_0_12 .concat8 [ 1 1 1 1], L_0x637c68761ae0, L_0x637c68761f90, L_0x637c68762450, L_0x637c68762b30;
+LS_0x637c6877c3e0_0_16 .concat8 [ 1 1 1 1], L_0x637c68763010, L_0x637c68763550, L_0x637c68763950, L_0x637c68763e40;
+LS_0x637c6877c3e0_0_20 .concat8 [ 1 1 1 1], L_0x637c68764360, L_0x637c68764890, L_0x637c68764dd0, L_0x637c68765320;
+LS_0x637c6877c3e0_0_24 .concat8 [ 1 1 1 1], L_0x637c68765880, L_0x637c68765df0, L_0x637c68766370, L_0x637c68766900;
+LS_0x637c6877c3e0_0_28 .concat8 [ 1 1 1 1], L_0x637c68766ea0, L_0x637c68767450, L_0x637c68767a10, L_0x637c68768750;
+LS_0x637c6877c3e0_0_32 .concat8 [ 1 1 1 1], L_0x637c68768cb0, L_0x637c68769220, L_0x637c687697a0, L_0x637c68769d30;
+LS_0x637c6877c3e0_0_36 .concat8 [ 1 1 1 1], L_0x637c6876a2d0, L_0x637c6876a880, L_0x637c6876ae40, L_0x637c6876b410;
+LS_0x637c6877c3e0_0_40 .concat8 [ 1 1 1 1], L_0x637c6876b9f0, L_0x637c6876bfe0, L_0x637c6876c5e0, L_0x637c6876cbf0;
+LS_0x637c6877c3e0_0_44 .concat8 [ 1 1 1 1], L_0x637c6876d210, L_0x637c6876d840, L_0x637c6876de80, L_0x637c6876e4d0;
+LS_0x637c6877c3e0_0_48 .concat8 [ 1 1 1 1], L_0x637c6876eb30, L_0x637c6876f1a0, L_0x637c6876f820, L_0x637c6876feb0;
+LS_0x637c6877c3e0_0_52 .concat8 [ 1 1 1 1], L_0x637c68770570, L_0x637c68770ca0, L_0x637c687713e0, L_0x637c68771b30;
+LS_0x637c6877c3e0_0_56 .concat8 [ 1 1 1 1], L_0x637c68772290, L_0x637c68772a00, L_0x637c68773180, L_0x637c68773910;
+LS_0x637c6877c3e0_0_60 .concat8 [ 1 1 1 1], L_0x637c687740b0, L_0x637c68774860, L_0x637c68775020, L_0x637c687767d0;
+LS_0x637c6877c3e0_0_64 .concat8 [ 1 1 1 1], L_0x637c68776f30, L_0x637c687776a0, L_0x637c687772c0, L_0x637c68777de0;
+LS_0x637c6877c3e0_0_68 .concat8 [ 1 1 1 1], L_0x637c68777a30, L_0x637c68778520, L_0x637c68778170, L_0x637c68778c80;
+LS_0x637c6877c3e0_0_72 .concat8 [ 1 1 1 1], L_0x637c687788b0, L_0x637c68779400, L_0x637c68779010, L_0x637c68779ba0;
+LS_0x637c6877c3e0_0_76 .concat8 [ 1 1 1 1], L_0x637c68779790, L_0x637c6877a310, L_0x637c68779f30, L_0x637c6877aaa0;
+LS_0x637c6877c3e0_0_80 .concat8 [ 1 1 1 1], L_0x637c6877a6a0, L_0x637c6877b250, L_0x637c6877ae30, L_0x637c6877ba20;
+LS_0x637c6877c3e0_0_84 .concat8 [ 1 1 1 1], L_0x637c6877b5e0, L_0x637c6877b9b0, L_0x637c6877bd60, L_0x637c6877c130;
+LS_0x637c6877c3e0_1_0 .concat8 [ 4 4 4 4], LS_0x637c6877c3e0_0_0, LS_0x637c6877c3e0_0_4, LS_0x637c6877c3e0_0_8, LS_0x637c6877c3e0_0_12;
+LS_0x637c6877c3e0_1_4 .concat8 [ 4 4 4 4], LS_0x637c6877c3e0_0_16, LS_0x637c6877c3e0_0_20, LS_0x637c6877c3e0_0_24, LS_0x637c6877c3e0_0_28;
+LS_0x637c6877c3e0_1_8 .concat8 [ 4 4 4 4], LS_0x637c6877c3e0_0_32, LS_0x637c6877c3e0_0_36, LS_0x637c6877c3e0_0_40, LS_0x637c6877c3e0_0_44;
+LS_0x637c6877c3e0_1_12 .concat8 [ 4 4 4 4], LS_0x637c6877c3e0_0_48, LS_0x637c6877c3e0_0_52, LS_0x637c6877c3e0_0_56, LS_0x637c6877c3e0_0_60;
+LS_0x637c6877c3e0_1_16 .concat8 [ 4 4 4 4], LS_0x637c6877c3e0_0_64, LS_0x637c6877c3e0_0_68, LS_0x637c6877c3e0_0_72, LS_0x637c6877c3e0_0_76;
+LS_0x637c6877c3e0_1_20 .concat8 [ 4 4 0 0], LS_0x637c6877c3e0_0_80, LS_0x637c6877c3e0_0_84;
+LS_0x637c6877c3e0_2_0 .concat8 [ 16 16 16 16], LS_0x637c6877c3e0_1_0, LS_0x637c6877c3e0_1_4, LS_0x637c6877c3e0_1_8, LS_0x637c6877c3e0_1_12;
+LS_0x637c6877c3e0_2_4 .concat8 [ 16 8 0 0], LS_0x637c6877c3e0_1_16, LS_0x637c6877c3e0_1_20;
+L_0x637c6877c3e0 .concat8 [ 64 24 0 0], LS_0x637c6877c3e0_2_0, LS_0x637c6877c3e0_2_4;
+L_0x637c6877c480 .reduce/and L_0x637c6877c3e0;
+S_0x637c68706a00 .scope generate, "cmp[0]" "cmp[0]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c686dfcc0 .param/l "i" 1 3 15, +C4<00>;
+S_0x637c68707e00 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c68706a00;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c686a3150_0 .net "a", 0 0, L_0x637c6875ed90;  1 drivers
+v0x637c686a1a70_0 .net "b", 0 0, L_0x637c6875ee50;  1 drivers
+v0x637c686bf720_0 .net "equal", 0 0, L_0x637c6875ecb0;  1 drivers
+v0x637c686bf3a0_0 .net "out1", 0 0, L_0x637c6875eba0;  1 drivers
+S_0x637c68709200 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c68707e00;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c6875ecb0 .functor NOT 1, L_0x637c6875eba0, C4<0>, C4<0>, C4<0>;
+v0x637c686a94b0_0 .net "a", 0 0, L_0x637c6875eba0;  alias, 1 drivers
+v0x637c686a80d0_0 .net "y", 0 0, L_0x637c6875ecb0;  alias, 1 drivers
+S_0x637c6870a600 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c68707e00;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c6875eba0 .functor XOR 1, L_0x637c6875ed90, L_0x637c6875ee50, C4<0>, C4<0>;
+v0x637c686a6cf0_0 .net "a", 0 0, L_0x637c6875ed90;  alias, 1 drivers
+v0x637c686a5910_0 .net "b", 0 0, L_0x637c6875ee50;  alias, 1 drivers
+v0x637c686a4530_0 .net "y", 0 0, L_0x637c6875eba0;  alias, 1 drivers
+S_0x637c6870ba00 .scope generate, "cmp[1]" "cmp[1]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c686bf460 .param/l "i" 1 3 15, +C4<01>;
+S_0x637c6870ce00 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c6870ba00;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c686bcbe0_0 .net "a", 0 0, L_0x637c6875f190;  1 drivers
+v0x637c686bc030_0 .net "b", 0 0, L_0x637c6875f230;  1 drivers
+v0x637c686bbb80_0 .net "equal", 0 0, L_0x637c6875f090;  1 drivers
+v0x637c686bb800_0 .net "out1", 0 0, L_0x637c6875ef40;  1 drivers
+S_0x637c68704200 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c6870ce00;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c6875f090 .functor NOT 1, L_0x637c6875ef40, C4<0>, C4<0>, C4<0>;
+v0x637c686be340_0 .net "a", 0 0, L_0x637c6875ef40;  alias, 1 drivers
+v0x637c686bdfc0_0 .net "y", 0 0, L_0x637c6875f090;  alias, 1 drivers
+S_0x637c686fb600 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c6870ce00;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c6875ef40 .functor XOR 1, L_0x637c6875f190, L_0x637c6875f230, C4<0>, C4<0>;
+v0x637c686bd460_0 .net "a", 0 0, L_0x637c6875f190;  alias, 1 drivers
+v0x637c686bcf60_0 .net "b", 0 0, L_0x637c6875f230;  alias, 1 drivers
+v0x637c686bd020_0 .net "y", 0 0, L_0x637c6875ef40;  alias, 1 drivers
+S_0x637c686fca00 .scope generate, "cmp[2]" "cmp[2]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c686bb8f0 .param/l "i" 1 3 15, +C4<010>;
+S_0x637c686fde00 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c686fca00;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c686b9040_0 .net "a", 0 0, L_0x637c6875f4b0;  1 drivers
+v0x637c686b8490_0 .net "b", 0 0, L_0x637c6875f550;  1 drivers
+v0x637c686b7fe0_0 .net "equal", 0 0, L_0x637c6875f3b0;  1 drivers
+v0x637c686b7c60_0 .net "out1", 0 0, L_0x637c6875f2d0;  1 drivers
+S_0x637c686ff200 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c686fde00;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c6875f3b0 .functor NOT 1, L_0x637c6875f2d0, C4<0>, C4<0>, C4<0>;
+v0x637c686ba7a0_0 .net "a", 0 0, L_0x637c6875f2d0;  alias, 1 drivers
+v0x637c686ba420_0 .net "y", 0 0, L_0x637c6875f3b0;  alias, 1 drivers
+S_0x637c68700600 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c686fde00;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c6875f2d0 .functor XOR 1, L_0x637c6875f4b0, L_0x637c6875f550, C4<0>, C4<0>;
+v0x637c686b9870_0 .net "a", 0 0, L_0x637c6875f4b0;  alias, 1 drivers
+v0x637c686b93c0_0 .net "b", 0 0, L_0x637c6875f550;  alias, 1 drivers
+v0x637c686b9480_0 .net "y", 0 0, L_0x637c6875f2d0;  alias, 1 drivers
+S_0x637c68701a00 .scope generate, "cmp[3]" "cmp[3]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c686b7d50 .param/l "i" 1 3 15, +C4<011>;
+S_0x637c68702e00 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c68701a00;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c686b5820_0 .net "a", 0 0, L_0x637c6875f820;  1 drivers
+v0x637c686b58c0_0 .net "b", 0 0, L_0x637c6875f8c0;  1 drivers
+v0x637c686b54a0_0 .net "equal", 0 0, L_0x637c6875f6e0;  1 drivers
+v0x637c686b48f0_0 .net "out1", 0 0, L_0x637c6875f630;  1 drivers
+S_0x637c686fa200 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c68702e00;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c6875f6e0 .functor NOT 1, L_0x637c6875f630, C4<0>, C4<0>, C4<0>;
+v0x637c686b7120_0 .net "a", 0 0, L_0x637c6875f630;  alias, 1 drivers
+v0x637c686b6c00_0 .net "y", 0 0, L_0x637c6875f6e0;  alias, 1 drivers
+S_0x637c686f1600 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c68702e00;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c6875f630 .functor XOR 1, L_0x637c6875f820, L_0x637c6875f8c0, C4<0>, C4<0>;
+v0x637c686b6920_0 .net "a", 0 0, L_0x637c6875f820;  alias, 1 drivers
+v0x637c686b5cd0_0 .net "b", 0 0, L_0x637c6875f8c0;  alias, 1 drivers
+v0x637c686b5d70_0 .net "y", 0 0, L_0x637c6875f630;  alias, 1 drivers
+S_0x637c686f2a00 .scope generate, "cmp[4]" "cmp[4]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c686b4440 .param/l "i" 1 3 15, +C4<0100>;
+S_0x637c686f3e00 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c686f2a00;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c686b2150_0 .net "a", 0 0, L_0x637c6875fc40;  1 drivers
+v0x637c686b1c80_0 .net "b", 0 0, L_0x637c6875fce0;  1 drivers
+v0x637c686b1900_0 .net "equal", 0 0, L_0x637c6875fab0;  1 drivers
+v0x637c686b0d50_0 .net "out1", 0 0, L_0x637c6875f9b0;  1 drivers
+S_0x637c686f5200 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c686f3e00;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c6875fab0 .functor NOT 1, L_0x637c6875f9b0, C4<0>, C4<0>, C4<0>;
+v0x637c686b4150_0 .net "a", 0 0, L_0x637c6875f9b0;  alias, 1 drivers
+v0x637c686b3510_0 .net "y", 0 0, L_0x637c6875fab0;  alias, 1 drivers
+S_0x637c686f6600 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c686f3e00;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c6875f9b0 .functor XOR 1, L_0x637c6875fc40, L_0x637c6875fce0, C4<0>, C4<0>;
+v0x637c686b3100_0 .net "a", 0 0, L_0x637c6875fc40;  alias, 1 drivers
+v0x637c686b2ce0_0 .net "b", 0 0, L_0x637c6875fce0;  alias, 1 drivers
+v0x637c686b2d80_0 .net "y", 0 0, L_0x637c6875f9b0;  alias, 1 drivers
+S_0x637c686f7a00 .scope generate, "cmp[5]" "cmp[5]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c686b2220 .param/l "i" 1 3 15, +C4<0101>;
+S_0x637c686f8e00 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c686f7a00;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c686ae590_0 .net "a", 0 0, L_0x637c68760020;  1 drivers
+v0x637c686ae0e0_0 .net "b", 0 0, L_0x637c687600c0;  1 drivers
+v0x637c686add60_0 .net "equal", 0 0, L_0x637c6875fe90;  1 drivers
+v0x637c686ad1b0_0 .net "out1", 0 0, L_0x637c6875fde0;  1 drivers
+S_0x637c686f0200 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c686f8e00;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c6875fe90 .functor NOT 1, L_0x637c6875fde0, C4<0>, C4<0>, C4<0>;
+v0x637c686b0960_0 .net "a", 0 0, L_0x637c6875fde0;  alias, 1 drivers
+v0x637c686b0560_0 .net "y", 0 0, L_0x637c6875fe90;  alias, 1 drivers
+S_0x637c686e7600 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c686f8e00;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c6875fde0 .functor XOR 1, L_0x637c68760020, L_0x637c687600c0, C4<0>, C4<0>;
+v0x637c686afa10_0 .net "a", 0 0, L_0x637c68760020;  alias, 1 drivers
+v0x637c686af4e0_0 .net "b", 0 0, L_0x637c687600c0;  alias, 1 drivers
+v0x637c686af140_0 .net "y", 0 0, L_0x637c6875fde0;  alias, 1 drivers
+S_0x637c686e8a00 .scope generate, "cmp[6]" "cmp[6]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c686ade60 .param/l "i" 1 3 15, +C4<0110>;
+S_0x637c686e9e00 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c686e8a00;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c686ab5a0_0 .net "a", 0 0, L_0x637c68760460;  1 drivers
+v0x637c686aa9f0_0 .net "b", 0 0, L_0x637c68760500;  1 drivers
+v0x637c686aa540_0 .net "equal", 0 0, L_0x637c687602d0;  1 drivers
+v0x637c686aa1c0_0 .net "out1", 0 0, L_0x637c687601d0;  1 drivers
+S_0x637c686eb200 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c686e9e00;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c687602d0 .functor NOT 1, L_0x637c687601d0, C4<0>, C4<0>, C4<0>;
+v0x637c686acd00_0 .net "a", 0 0, L_0x637c687601d0;  alias, 1 drivers
+v0x637c686acdc0_0 .net "y", 0 0, L_0x637c687602d0;  alias, 1 drivers
+S_0x637c686ec600 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c686e9e00;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c687601d0 .functor XOR 1, L_0x637c68760460, L_0x637c68760500, C4<0>, C4<0>;
+v0x637c686abdd0_0 .net "a", 0 0, L_0x637c68760460;  alias, 1 drivers
+v0x637c686ab920_0 .net "b", 0 0, L_0x637c68760500;  alias, 1 drivers
+v0x637c686ab9e0_0 .net "y", 0 0, L_0x637c687601d0;  alias, 1 drivers
+S_0x637c686eda00 .scope generate, "cmp[7]" "cmp[7]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c686aa2b0 .param/l "i" 1 3 15, +C4<0111>;
+S_0x637c686eee00 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c686eda00;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c686a7a00_0 .net "a", 0 0, L_0x637c687607b0;  1 drivers
+v0x637c686a6e50_0 .net "b", 0 0, L_0x637c68760850;  1 drivers
+v0x637c686a69a0_0 .net "equal", 0 0, L_0x637c687606b0;  1 drivers
+v0x637c686a6620_0 .net "out1", 0 0, L_0x637c68760160;  1 drivers
+S_0x637c686e6200 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c686eee00;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c687606b0 .functor NOT 1, L_0x637c68760160, C4<0>, C4<0>, C4<0>;
+v0x637c686a9160_0 .net "a", 0 0, L_0x637c68760160;  alias, 1 drivers
+v0x637c686a8de0_0 .net "y", 0 0, L_0x637c687606b0;  alias, 1 drivers
+S_0x637c686dd600 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c686eee00;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68760160 .functor XOR 1, L_0x637c687607b0, L_0x637c68760850, C4<0>, C4<0>;
+v0x637c686a8230_0 .net "a", 0 0, L_0x637c687607b0;  alias, 1 drivers
+v0x637c686a7d80_0 .net "b", 0 0, L_0x637c68760850;  alias, 1 drivers
+v0x637c686a7e40_0 .net "y", 0 0, L_0x637c68760160;  alias, 1 drivers
+S_0x637c686dea00 .scope generate, "cmp[8]" "cmp[8]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c686b49e0 .param/l "i" 1 3 15, +C4<01000>;
+S_0x637c686dfe00 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c686dea00;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c686a41e0_0 .net "a", 0 0, L_0x637c68760b80;  1 drivers
+v0x637c686a3e60_0 .net "b", 0 0, L_0x637c68760c20;  1 drivers
+v0x637c686a32b0_0 .net "equal", 0 0, L_0x637c68760a80;  1 drivers
+v0x637c686a2e00_0 .net "out1", 0 0, L_0x637c68760980;  1 drivers
+S_0x637c686e1200 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c686dfe00;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68760a80 .functor NOT 1, L_0x637c68760980, C4<0>, C4<0>, C4<0>;
+v0x637c686a5a70_0 .net "a", 0 0, L_0x637c68760980;  alias, 1 drivers
+v0x637c686a5b30_0 .net "y", 0 0, L_0x637c68760a80;  alias, 1 drivers
+S_0x637c686e2600 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c686dfe00;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68760980 .functor XOR 1, L_0x637c68760b80, L_0x637c68760c20, C4<0>, C4<0>;
+v0x637c686a5240_0 .net "a", 0 0, L_0x637c68760b80;  alias, 1 drivers
+v0x637c686a5300_0 .net "b", 0 0, L_0x637c68760c20;  alias, 1 drivers
+v0x637c686a46b0_0 .net "y", 0 0, L_0x637c68760980;  alias, 1 drivers
+S_0x637c686e3a00 .scope generate, "cmp[9]" "cmp[9]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c686a33b0 .param/l "i" 1 3 15, +C4<01001>;
+S_0x637c686e4e00 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c686e3a00;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c686cd200_0 .net "a", 0 0, L_0x637c68760f60;  1 drivers
+v0x637c686cd2d0_0 .net "b", 0 0, L_0x637c68761000;  1 drivers
+v0x637c686cbe00_0 .net "equal", 0 0, L_0x637c68760e60;  1 drivers
+v0x637c686caa00_0 .net "out1", 0 0, L_0x637c68760d60;  1 drivers
+S_0x637c686dc200 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c686e4e00;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68760e60 .functor NOT 1, L_0x637c68760d60, C4<0>, C4<0>, C4<0>;
+v0x637c686d2290_0 .net "a", 0 0, L_0x637c68760d60;  alias, 1 drivers
+v0x637c686d0e00_0 .net "y", 0 0, L_0x637c68760e60;  alias, 1 drivers
+S_0x637c686d3600 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c686e4e00;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68760d60 .functor XOR 1, L_0x637c68760f60, L_0x637c68761000, C4<0>, C4<0>;
+v0x637c686cfa50_0 .net "a", 0 0, L_0x637c68760f60;  alias, 1 drivers
+v0x637c686ce600_0 .net "b", 0 0, L_0x637c68761000;  alias, 1 drivers
+v0x637c686ce6c0_0 .net "y", 0 0, L_0x637c68760d60;  alias, 1 drivers
+S_0x637c686d4a00 .scope generate, "cmp[10]" "cmp[10]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c686cab40 .param/l "i" 1 3 15, +C4<01010>;
+S_0x637c686d5e00 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c686d4a00;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c686c5cb0_0 .net "a", 0 0, L_0x637c68760cc0;  1 drivers
+v0x637c686c5d80_0 .net "b", 0 0, L_0x637c687613e0;  1 drivers
+v0x637c686c7090_0 .net "equal", 0 0, L_0x637c68761250;  1 drivers
+v0x637c686c7190_0 .net "out1", 0 0, L_0x637c68761150;  1 drivers
+S_0x637c686d7200 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c686d5e00;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68761250 .functor NOT 1, L_0x637c68761150, C4<0>, C4<0>, C4<0>;
+v0x637c686c2110_0 .net "a", 0 0, L_0x637c68761150;  alias, 1 drivers
+v0x637c686c21f0_0 .net "y", 0 0, L_0x637c68761250;  alias, 1 drivers
+S_0x637c686d8600 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c686d5e00;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68761150 .functor XOR 1, L_0x637c68760cc0, L_0x637c687613e0, C4<0>, C4<0>;
+v0x637c686c3590_0 .net "a", 0 0, L_0x637c68760cc0;  alias, 1 drivers
+v0x637c686c48d0_0 .net "b", 0 0, L_0x637c687613e0;  alias, 1 drivers
+v0x637c686c4990_0 .net "y", 0 0, L_0x637c68761150;  alias, 1 drivers
+S_0x637c686d9a00 .scope generate, "cmp[11]" "cmp[11]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c686c84c0 .param/l "i" 1 3 15, +C4<01011>;
+S_0x637c686dae00 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c686d9a00;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c68708110_0 .net "a", 0 0, L_0x637c687617d0;  1 drivers
+v0x637c68706c30_0 .net "b", 0 0, L_0x637c68761870;  1 drivers
+v0x637c68706d00_0 .net "equal", 0 0, L_0x637c68761640;  1 drivers
+v0x637c68705830_0 .net "out1", 0 0, L_0x637c68761540;  1 drivers
+S_0x637c6870d030 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c686dae00;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68761640 .functor NOT 1, L_0x637c68761540, C4<0>, C4<0>, C4<0>;
+v0x637c6870bc70_0 .net "a", 0 0, L_0x637c68761540;  alias, 1 drivers
+v0x637c6870bd50_0 .net "y", 0 0, L_0x637c68761640;  alias, 1 drivers
+S_0x637c6870a850 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c686dae00;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68761540 .functor XOR 1, L_0x637c687617d0, L_0x637c68761870, C4<0>, C4<0>;
+v0x637c68709480_0 .net "a", 0 0, L_0x637c687617d0;  alias, 1 drivers
+v0x637c68709560_0 .net "b", 0 0, L_0x637c68761870;  alias, 1 drivers
+v0x637c68708030_0 .net "y", 0 0, L_0x637c68761540;  alias, 1 drivers
+S_0x637c68704430 .scope generate, "cmp[12]" "cmp[12]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c68704610 .param/l "i" 1 3 15, +C4<01100>;
+S_0x637c68703030 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c68704430;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c686fcc30_0 .net "a", 0 0, L_0x637c68761c70;  1 drivers
+v0x637c686fccd0_0 .net "b", 0 0, L_0x637c68761d10;  1 drivers
+v0x637c686fcd90_0 .net "equal", 0 0, L_0x637c68761ae0;  1 drivers
+v0x637c686fb830_0 .net "out1", 0 0, L_0x637c687619e0;  1 drivers
+S_0x637c68701c30 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c68703030;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68761ae0 .functor NOT 1, L_0x637c687619e0, C4<0>, C4<0>, C4<0>;
+v0x637c68705960_0 .net "a", 0 0, L_0x637c687619e0;  alias, 1 drivers
+v0x637c68700830_0 .net "y", 0 0, L_0x637c68761ae0;  alias, 1 drivers
+S_0x637c686ff430 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c68703030;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c687619e0 .functor XOR 1, L_0x637c68761c70, L_0x637c68761d10, C4<0>, C4<0>;
+v0x637c687009a0_0 .net "a", 0 0, L_0x637c68761c70;  alias, 1 drivers
+v0x637c686fe030_0 .net "b", 0 0, L_0x637c68761d10;  alias, 1 drivers
+v0x637c686fe0f0_0 .net "y", 0 0, L_0x637c687619e0;  alias, 1 drivers
+S_0x637c686fa430 .scope generate, "cmp[13]" "cmp[13]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c686fa610 .param/l "i" 1 3 15, +C4<01101>;
+S_0x637c686f9030 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c686fa430;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c686f2c30_0 .net "a", 0 0, L_0x637c68762120;  1 drivers
+v0x637c686f2cd0_0 .net "b", 0 0, L_0x637c687621c0;  1 drivers
+v0x637c686f2da0_0 .net "equal", 0 0, L_0x637c68761f90;  1 drivers
+v0x637c686f1830_0 .net "out1", 0 0, L_0x637c68761e90;  1 drivers
+S_0x637c686f7c30 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c686f9030;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68761f90 .functor NOT 1, L_0x637c68761e90, C4<0>, C4<0>, C4<0>;
+v0x637c686fb960_0 .net "a", 0 0, L_0x637c68761e90;  alias, 1 drivers
+v0x637c686f6830_0 .net "y", 0 0, L_0x637c68761f90;  alias, 1 drivers
+S_0x637c686f5430 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c686f9030;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68761e90 .functor XOR 1, L_0x637c68762120, L_0x637c687621c0, C4<0>, C4<0>;
+v0x637c686f6980_0 .net "a", 0 0, L_0x637c68762120;  alias, 1 drivers
+v0x637c686f4030_0 .net "b", 0 0, L_0x637c687621c0;  alias, 1 drivers
+v0x637c686f40f0_0 .net "y", 0 0, L_0x637c68761e90;  alias, 1 drivers
+S_0x637c686f0430 .scope generate, "cmp[14]" "cmp[14]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c686f0610 .param/l "i" 1 3 15, +C4<01110>;
+S_0x637c686ef030 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c686f0430;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c686e8d10_0 .net "a", 0 0, L_0x637c687625e0;  1 drivers
+v0x637c686e8db0_0 .net "b", 0 0, L_0x637c68762680;  1 drivers
+v0x637c686e7830_0 .net "equal", 0 0, L_0x637c68762450;  1 drivers
+v0x637c686e78d0_0 .net "out1", 0 0, L_0x637c68762350;  1 drivers
+S_0x637c686edc30 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c686ef030;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68762450 .functor NOT 1, L_0x637c68762350, C4<0>, C4<0>, C4<0>;
+v0x637c686ec830_0 .net "a", 0 0, L_0x637c68762350;  alias, 1 drivers
+v0x637c686ec910_0 .net "y", 0 0, L_0x637c68762450;  alias, 1 drivers
+S_0x637c686eb430 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c686ef030;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68762350 .functor XOR 1, L_0x637c687625e0, L_0x637c68762680, C4<0>, C4<0>;
+v0x637c686ea080_0 .net "a", 0 0, L_0x637c687625e0;  alias, 1 drivers
+v0x637c686ea160_0 .net "b", 0 0, L_0x637c68762680;  alias, 1 drivers
+v0x637c686e8c30_0 .net "y", 0 0, L_0x637c68762350;  alias, 1 drivers
+S_0x637c686e6430 .scope generate, "cmp[15]" "cmp[15]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c686e6610 .param/l "i" 1 3 15, +C4<01111>;
+S_0x637c686e5030 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c686e6430;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c686ded10_0 .net "a", 0 0, L_0x637c68762cc0;  1 drivers
+v0x637c686dedb0_0 .net "b", 0 0, L_0x637c68762d60;  1 drivers
+v0x637c686dd830_0 .net "equal", 0 0, L_0x637c68762b30;  1 drivers
+v0x637c686dd930_0 .net "out1", 0 0, L_0x637c68762a30;  1 drivers
+S_0x637c686e3c80 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c686e5030;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68762b30 .functor NOT 1, L_0x637c68762a30, C4<0>, C4<0>, C4<0>;
+v0x637c686e2830_0 .net "a", 0 0, L_0x637c68762a30;  alias, 1 drivers
+v0x637c686e28f0_0 .net "y", 0 0, L_0x637c68762b30;  alias, 1 drivers
+S_0x637c686e1430 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c686e5030;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68762a30 .functor XOR 1, L_0x637c68762cc0, L_0x637c68762d60, C4<0>, C4<0>;
+v0x637c686e0030_0 .net "a", 0 0, L_0x637c68762cc0;  alias, 1 drivers
+v0x637c686e0110_0 .net "b", 0 0, L_0x637c68762d60;  alias, 1 drivers
+v0x637c686dec30_0 .net "y", 0 0, L_0x637c68762a30;  alias, 1 drivers
+S_0x637c686dc430 .scope generate, "cmp[16]" "cmp[16]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c686dc610 .param/l "i" 1 3 15, +C4<010000>;
+S_0x637c686db030 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c686dc430;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c686d4cf0_0 .net "a", 0 0, L_0x637c687631a0;  1 drivers
+v0x637c686d4dc0_0 .net "b", 0 0, L_0x637c68763240;  1 drivers
+v0x637c686d3860_0 .net "equal", 0 0, L_0x637c68763010;  1 drivers
+v0x637c686d3960_0 .net "out1", 0 0, L_0x637c68762f10;  1 drivers
+S_0x637c686d9c80 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c686db030;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68763010 .functor NOT 1, L_0x637c68762f10, C4<0>, C4<0>, C4<0>;
+v0x637c686d8890_0 .net "a", 0 0, L_0x637c68762f10;  alias, 1 drivers
+v0x637c686d8970_0 .net "y", 0 0, L_0x637c68763010;  alias, 1 drivers
+S_0x637c686d7470 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c686db030;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68762f10 .functor XOR 1, L_0x637c687631a0, L_0x637c68763240, C4<0>, C4<0>;
+v0x637c686d60a0_0 .net "a", 0 0, L_0x637c687631a0;  alias, 1 drivers
+v0x637c686d6180_0 .net "b", 0 0, L_0x637c68763240;  alias, 1 drivers
+v0x637c686d4c30_0 .net "y", 0 0, L_0x637c68762f10;  alias, 1 drivers
+S_0x637c686d2430 .scope generate, "cmp[17]" "cmp[17]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c686d2610 .param/l "i" 1 3 15, +C4<010001>;
+S_0x637c686d10c0 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c686d2430;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c686c9830_0 .net "a", 0 0, L_0x637c687636e0;  1 drivers
+v0x637c686c98d0_0 .net "b", 0 0, L_0x637c68763780;  1 drivers
+v0x637c686c9970_0 .net "equal", 0 0, L_0x637c68763550;  1 drivers
+v0x637c6870e3c0_0 .net "out1", 0 0, L_0x637c68763400;  1 drivers
+S_0x637c686ce830 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c686d10c0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68763550 .functor NOT 1, L_0x637c68763400, C4<0>, C4<0>, C4<0>;
+v0x637c686cfd30_0 .net "a", 0 0, L_0x637c68763400;  alias, 1 drivers
+v0x637c686cd430_0 .net "y", 0 0, L_0x637c68763550;  alias, 1 drivers
+S_0x637c686cc030 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c686d10c0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68763400 .functor XOR 1, L_0x637c687636e0, L_0x637c68763780, C4<0>, C4<0>;
+v0x637c686cd550_0 .net "a", 0 0, L_0x637c687636e0;  alias, 1 drivers
+v0x637c686cac30_0 .net "b", 0 0, L_0x637c68763780;  alias, 1 drivers
+v0x637c686cacf0_0 .net "y", 0 0, L_0x637c68763400;  alias, 1 drivers
+S_0x637c6870e4b0 .scope generate, "cmp[18]" "cmp[18]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c685f35d0 .param/l "i" 1 3 15, +C4<010010>;
+S_0x637c685f3670 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c6870e4b0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c685b87c0_0 .net "a", 0 0, L_0x637c68763ac0;  1 drivers
+v0x637c685f1f80_0 .net "b", 0 0, L_0x637c68763b60;  1 drivers
+v0x637c685f2050_0 .net "equal", 0 0, L_0x637c68763950;  1 drivers
+v0x637c685f2150_0 .net "out1", 0 0, L_0x637c687632e0;  1 drivers
+S_0x637c685f38c0 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c685f3670;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68763950 .functor NOT 1, L_0x637c687632e0, C4<0>, C4<0>, C4<0>;
+v0x637c685f5e90_0 .net "a", 0 0, L_0x637c687632e0;  alias, 1 drivers
+v0x637c685f5f70_0 .net "y", 0 0, L_0x637c68763950;  alias, 1 drivers
+S_0x637c685f6090 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c685f3670;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c687632e0 .functor XOR 1, L_0x637c68763ac0, L_0x637c68763b60, C4<0>, C4<0>;
+v0x637c685b8530_0 .net "a", 0 0, L_0x637c68763ac0;  alias, 1 drivers
+v0x637c685b85f0_0 .net "b", 0 0, L_0x637c68763b60;  alias, 1 drivers
+v0x637c685b86b0_0 .net "y", 0 0, L_0x637c687632e0;  alias, 1 drivers
+S_0x637c685f2240 .scope generate, "cmp[19]" "cmp[19]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c685f1200 .param/l "i" 1 3 15, +C4<010011>;
+S_0x637c685f12e0 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c685f2240;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c68711c20_0 .net "a", 0 0, L_0x637c68763fd0;  1 drivers
+v0x637c68711cc0_0 .net "b", 0 0, L_0x637c68764070;  1 drivers
+v0x637c68711d90_0 .net "equal", 0 0, L_0x637c68763e40;  1 drivers
+v0x637c68711e90_0 .net "out1", 0 0, L_0x637c68763d40;  1 drivers
+S_0x637c685f1530 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c685f12e0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68763e40 .functor NOT 1, L_0x637c68763d40, C4<0>, C4<0>, C4<0>;
+v0x637c68711530_0 .net "a", 0 0, L_0x637c68763d40;  alias, 1 drivers
+v0x637c68711610_0 .net "y", 0 0, L_0x637c68763e40;  alias, 1 drivers
+S_0x637c68711730 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c685f12e0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68763d40 .functor XOR 1, L_0x637c68763fd0, L_0x637c68764070, C4<0>, C4<0>;
+v0x637c687119a0_0 .net "a", 0 0, L_0x637c68763fd0;  alias, 1 drivers
+v0x637c68711a80_0 .net "b", 0 0, L_0x637c68764070;  alias, 1 drivers
+v0x637c68711b40_0 .net "y", 0 0, L_0x637c68763d40;  alias, 1 drivers
+S_0x637c68711f80 .scope generate, "cmp[20]" "cmp[20]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c68712160 .param/l "i" 1 3 15, +C4<010100>;
+S_0x637c68712240 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c68711f80;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c68712dd0_0 .net "a", 0 0, L_0x637c687644f0;  1 drivers
+v0x637c68712ea0_0 .net "b", 0 0, L_0x637c68764590;  1 drivers
+v0x637c68712f70_0 .net "equal", 0 0, L_0x637c68764360;  1 drivers
+v0x637c68713070_0 .net "out1", 0 0, L_0x637c68764260;  1 drivers
+S_0x637c68712490 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c68712240;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68764360 .functor NOT 1, L_0x637c68764260, C4<0>, C4<0>, C4<0>;
+v0x637c687126f0_0 .net "a", 0 0, L_0x637c68764260;  alias, 1 drivers
+v0x637c687127d0_0 .net "y", 0 0, L_0x637c68764360;  alias, 1 drivers
+S_0x637c687128f0 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c68712240;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68764260 .functor XOR 1, L_0x637c687644f0, L_0x637c68764590, C4<0>, C4<0>;
+v0x637c68712b20_0 .net "a", 0 0, L_0x637c687644f0;  alias, 1 drivers
+v0x637c68712c00_0 .net "b", 0 0, L_0x637c68764590;  alias, 1 drivers
+v0x637c68712cc0_0 .net "y", 0 0, L_0x637c68764260;  alias, 1 drivers
+S_0x637c68713160 .scope generate, "cmp[21]" "cmp[21]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c68713340 .param/l "i" 1 3 15, +C4<010101>;
+S_0x637c68713420 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c68713160;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c68713fb0_0 .net "a", 0 0, L_0x637c68764a20;  1 drivers
+v0x637c68714080_0 .net "b", 0 0, L_0x637c68764ac0;  1 drivers
+v0x637c68714150_0 .net "equal", 0 0, L_0x637c68764890;  1 drivers
+v0x637c68714250_0 .net "out1", 0 0, L_0x637c68764790;  1 drivers
+S_0x637c68713670 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c68713420;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68764890 .functor NOT 1, L_0x637c68764790, C4<0>, C4<0>, C4<0>;
+v0x637c687138d0_0 .net "a", 0 0, L_0x637c68764790;  alias, 1 drivers
+v0x637c687139b0_0 .net "y", 0 0, L_0x637c68764890;  alias, 1 drivers
+S_0x637c68713ad0 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c68713420;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68764790 .functor XOR 1, L_0x637c68764a20, L_0x637c68764ac0, C4<0>, C4<0>;
+v0x637c68713d00_0 .net "a", 0 0, L_0x637c68764a20;  alias, 1 drivers
+v0x637c68713de0_0 .net "b", 0 0, L_0x637c68764ac0;  alias, 1 drivers
+v0x637c68713ea0_0 .net "y", 0 0, L_0x637c68764790;  alias, 1 drivers
+S_0x637c68714340 .scope generate, "cmp[22]" "cmp[22]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c68714520 .param/l "i" 1 3 15, +C4<010110>;
+S_0x637c68714600 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c68714340;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c68715190_0 .net "a", 0 0, L_0x637c68764f60;  1 drivers
+v0x637c68715260_0 .net "b", 0 0, L_0x637c68765000;  1 drivers
+v0x637c68715330_0 .net "equal", 0 0, L_0x637c68764dd0;  1 drivers
+v0x637c68715430_0 .net "out1", 0 0, L_0x637c68764cd0;  1 drivers
+S_0x637c68714850 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c68714600;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68764dd0 .functor NOT 1, L_0x637c68764cd0, C4<0>, C4<0>, C4<0>;
+v0x637c68714ab0_0 .net "a", 0 0, L_0x637c68764cd0;  alias, 1 drivers
+v0x637c68714b90_0 .net "y", 0 0, L_0x637c68764dd0;  alias, 1 drivers
+S_0x637c68714cb0 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c68714600;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68764cd0 .functor XOR 1, L_0x637c68764f60, L_0x637c68765000, C4<0>, C4<0>;
+v0x637c68714ee0_0 .net "a", 0 0, L_0x637c68764f60;  alias, 1 drivers
+v0x637c68714fc0_0 .net "b", 0 0, L_0x637c68765000;  alias, 1 drivers
+v0x637c68715080_0 .net "y", 0 0, L_0x637c68764cd0;  alias, 1 drivers
+S_0x637c68715520 .scope generate, "cmp[23]" "cmp[23]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c68715700 .param/l "i" 1 3 15, +C4<010111>;
+S_0x637c687157e0 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c68715520;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c68716370_0 .net "a", 0 0, L_0x637c687654b0;  1 drivers
+v0x637c68716440_0 .net "b", 0 0, L_0x637c68765550;  1 drivers
+v0x637c68716510_0 .net "equal", 0 0, L_0x637c68765320;  1 drivers
+v0x637c68716610_0 .net "out1", 0 0, L_0x637c68765220;  1 drivers
+S_0x637c68715a30 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c687157e0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68765320 .functor NOT 1, L_0x637c68765220, C4<0>, C4<0>, C4<0>;
+v0x637c68715c90_0 .net "a", 0 0, L_0x637c68765220;  alias, 1 drivers
+v0x637c68715d70_0 .net "y", 0 0, L_0x637c68765320;  alias, 1 drivers
+S_0x637c68715e90 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c687157e0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68765220 .functor XOR 1, L_0x637c687654b0, L_0x637c68765550, C4<0>, C4<0>;
+v0x637c687160c0_0 .net "a", 0 0, L_0x637c687654b0;  alias, 1 drivers
+v0x637c687161a0_0 .net "b", 0 0, L_0x637c68765550;  alias, 1 drivers
+v0x637c68716260_0 .net "y", 0 0, L_0x637c68765220;  alias, 1 drivers
+S_0x637c68716700 .scope generate, "cmp[24]" "cmp[24]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c687168e0 .param/l "i" 1 3 15, +C4<011000>;
+S_0x637c687169c0 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c68716700;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c68717550_0 .net "a", 0 0, L_0x637c68765a10;  1 drivers
+v0x637c68717620_0 .net "b", 0 0, L_0x637c68765ab0;  1 drivers
+v0x637c687176f0_0 .net "equal", 0 0, L_0x637c68765880;  1 drivers
+v0x637c687177f0_0 .net "out1", 0 0, L_0x637c68765780;  1 drivers
+S_0x637c68716c10 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c687169c0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68765880 .functor NOT 1, L_0x637c68765780, C4<0>, C4<0>, C4<0>;
+v0x637c68716e70_0 .net "a", 0 0, L_0x637c68765780;  alias, 1 drivers
+v0x637c68716f50_0 .net "y", 0 0, L_0x637c68765880;  alias, 1 drivers
+S_0x637c68717070 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c687169c0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68765780 .functor XOR 1, L_0x637c68765a10, L_0x637c68765ab0, C4<0>, C4<0>;
+v0x637c687172a0_0 .net "a", 0 0, L_0x637c68765a10;  alias, 1 drivers
+v0x637c68717380_0 .net "b", 0 0, L_0x637c68765ab0;  alias, 1 drivers
+v0x637c68717440_0 .net "y", 0 0, L_0x637c68765780;  alias, 1 drivers
+S_0x637c687178e0 .scope generate, "cmp[25]" "cmp[25]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c68717ac0 .param/l "i" 1 3 15, +C4<011001>;
+S_0x637c68717ba0 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c687178e0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c68718730_0 .net "a", 0 0, L_0x637c68765f80;  1 drivers
+v0x637c68718800_0 .net "b", 0 0, L_0x637c68766020;  1 drivers
+v0x637c687188d0_0 .net "equal", 0 0, L_0x637c68765df0;  1 drivers
+v0x637c687189d0_0 .net "out1", 0 0, L_0x637c68765cf0;  1 drivers
+S_0x637c68717df0 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c68717ba0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68765df0 .functor NOT 1, L_0x637c68765cf0, C4<0>, C4<0>, C4<0>;
+v0x637c68718050_0 .net "a", 0 0, L_0x637c68765cf0;  alias, 1 drivers
+v0x637c68718130_0 .net "y", 0 0, L_0x637c68765df0;  alias, 1 drivers
+S_0x637c68718250 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c68717ba0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68765cf0 .functor XOR 1, L_0x637c68765f80, L_0x637c68766020, C4<0>, C4<0>;
+v0x637c68718480_0 .net "a", 0 0, L_0x637c68765f80;  alias, 1 drivers
+v0x637c68718560_0 .net "b", 0 0, L_0x637c68766020;  alias, 1 drivers
+v0x637c68718620_0 .net "y", 0 0, L_0x637c68765cf0;  alias, 1 drivers
+S_0x637c68718ac0 .scope generate, "cmp[26]" "cmp[26]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c68718ca0 .param/l "i" 1 3 15, +C4<011010>;
+S_0x637c68718d80 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c68718ac0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c68719910_0 .net "a", 0 0, L_0x637c68766500;  1 drivers
+v0x637c687199e0_0 .net "b", 0 0, L_0x637c687665a0;  1 drivers
+v0x637c68719ab0_0 .net "equal", 0 0, L_0x637c68766370;  1 drivers
+v0x637c68719bb0_0 .net "out1", 0 0, L_0x637c68766270;  1 drivers
+S_0x637c68718fd0 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c68718d80;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68766370 .functor NOT 1, L_0x637c68766270, C4<0>, C4<0>, C4<0>;
+v0x637c68719230_0 .net "a", 0 0, L_0x637c68766270;  alias, 1 drivers
+v0x637c68719310_0 .net "y", 0 0, L_0x637c68766370;  alias, 1 drivers
+S_0x637c68719430 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c68718d80;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68766270 .functor XOR 1, L_0x637c68766500, L_0x637c687665a0, C4<0>, C4<0>;
+v0x637c68719660_0 .net "a", 0 0, L_0x637c68766500;  alias, 1 drivers
+v0x637c68719740_0 .net "b", 0 0, L_0x637c687665a0;  alias, 1 drivers
+v0x637c68719800_0 .net "y", 0 0, L_0x637c68766270;  alias, 1 drivers
+S_0x637c68719ca0 .scope generate, "cmp[27]" "cmp[27]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c68719e80 .param/l "i" 1 3 15, +C4<011011>;
+S_0x637c68719f60 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c68719ca0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c6871aaf0_0 .net "a", 0 0, L_0x637c68766a90;  1 drivers
+v0x637c6871abc0_0 .net "b", 0 0, L_0x637c68766b30;  1 drivers
+v0x637c6871ac90_0 .net "equal", 0 0, L_0x637c68766900;  1 drivers
+v0x637c6871ad90_0 .net "out1", 0 0, L_0x637c68766800;  1 drivers
+S_0x637c6871a1b0 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c68719f60;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68766900 .functor NOT 1, L_0x637c68766800, C4<0>, C4<0>, C4<0>;
+v0x637c6871a410_0 .net "a", 0 0, L_0x637c68766800;  alias, 1 drivers
+v0x637c6871a4f0_0 .net "y", 0 0, L_0x637c68766900;  alias, 1 drivers
+S_0x637c6871a610 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c68719f60;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68766800 .functor XOR 1, L_0x637c68766a90, L_0x637c68766b30, C4<0>, C4<0>;
+v0x637c6871a840_0 .net "a", 0 0, L_0x637c68766a90;  alias, 1 drivers
+v0x637c6871a920_0 .net "b", 0 0, L_0x637c68766b30;  alias, 1 drivers
+v0x637c6871a9e0_0 .net "y", 0 0, L_0x637c68766800;  alias, 1 drivers
+S_0x637c6871ae80 .scope generate, "cmp[28]" "cmp[28]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c6871b060 .param/l "i" 1 3 15, +C4<011100>;
+S_0x637c6871b140 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c6871ae80;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c6871bcd0_0 .net "a", 0 0, L_0x637c68767030;  1 drivers
+v0x637c6871bda0_0 .net "b", 0 0, L_0x637c687670d0;  1 drivers
+v0x637c6871be70_0 .net "equal", 0 0, L_0x637c68766ea0;  1 drivers
+v0x637c6871bf70_0 .net "out1", 0 0, L_0x637c68766da0;  1 drivers
+S_0x637c6871b390 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c6871b140;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68766ea0 .functor NOT 1, L_0x637c68766da0, C4<0>, C4<0>, C4<0>;
+v0x637c6871b5f0_0 .net "a", 0 0, L_0x637c68766da0;  alias, 1 drivers
+v0x637c6871b6d0_0 .net "y", 0 0, L_0x637c68766ea0;  alias, 1 drivers
+S_0x637c6871b7f0 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c6871b140;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68766da0 .functor XOR 1, L_0x637c68767030, L_0x637c687670d0, C4<0>, C4<0>;
+v0x637c6871ba20_0 .net "a", 0 0, L_0x637c68767030;  alias, 1 drivers
+v0x637c6871bb00_0 .net "b", 0 0, L_0x637c687670d0;  alias, 1 drivers
+v0x637c6871bbc0_0 .net "y", 0 0, L_0x637c68766da0;  alias, 1 drivers
+S_0x637c6871c060 .scope generate, "cmp[29]" "cmp[29]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c6871c240 .param/l "i" 1 3 15, +C4<011101>;
+S_0x637c6871c320 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c6871c060;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c6871ceb0_0 .net "a", 0 0, L_0x637c687675e0;  1 drivers
+v0x637c6871cf80_0 .net "b", 0 0, L_0x637c68767680;  1 drivers
+v0x637c6871d050_0 .net "equal", 0 0, L_0x637c68767450;  1 drivers
+v0x637c6871d150_0 .net "out1", 0 0, L_0x637c68767350;  1 drivers
+S_0x637c6871c570 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c6871c320;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68767450 .functor NOT 1, L_0x637c68767350, C4<0>, C4<0>, C4<0>;
+v0x637c6871c7d0_0 .net "a", 0 0, L_0x637c68767350;  alias, 1 drivers
+v0x637c6871c8b0_0 .net "y", 0 0, L_0x637c68767450;  alias, 1 drivers
+S_0x637c6871c9d0 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c6871c320;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68767350 .functor XOR 1, L_0x637c687675e0, L_0x637c68767680, C4<0>, C4<0>;
+v0x637c6871cc00_0 .net "a", 0 0, L_0x637c687675e0;  alias, 1 drivers
+v0x637c6871cce0_0 .net "b", 0 0, L_0x637c68767680;  alias, 1 drivers
+v0x637c6871cda0_0 .net "y", 0 0, L_0x637c68767350;  alias, 1 drivers
+S_0x637c6871d240 .scope generate, "cmp[30]" "cmp[30]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c6871d420 .param/l "i" 1 3 15, +C4<011110>;
+S_0x637c6871d500 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c6871d240;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c6871e090_0 .net "a", 0 0, L_0x637c68767ba0;  1 drivers
+v0x637c6871e160_0 .net "b", 0 0, L_0x637c68768050;  1 drivers
+v0x637c6871e230_0 .net "equal", 0 0, L_0x637c68767a10;  1 drivers
+v0x637c6871e330_0 .net "out1", 0 0, L_0x637c68767910;  1 drivers
+S_0x637c6871d750 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c6871d500;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68767a10 .functor NOT 1, L_0x637c68767910, C4<0>, C4<0>, C4<0>;
+v0x637c6871d9b0_0 .net "a", 0 0, L_0x637c68767910;  alias, 1 drivers
+v0x637c6871da90_0 .net "y", 0 0, L_0x637c68767a10;  alias, 1 drivers
+S_0x637c6871dbb0 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c6871d500;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68767910 .functor XOR 1, L_0x637c68767ba0, L_0x637c68768050, C4<0>, C4<0>;
+v0x637c6871dde0_0 .net "a", 0 0, L_0x637c68767ba0;  alias, 1 drivers
+v0x637c6871dec0_0 .net "b", 0 0, L_0x637c68768050;  alias, 1 drivers
+v0x637c6871df80_0 .net "y", 0 0, L_0x637c68767910;  alias, 1 drivers
+S_0x637c6871e420 .scope generate, "cmp[31]" "cmp[31]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c6871e600 .param/l "i" 1 3 15, +C4<011111>;
+S_0x637c6871e6e0 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c6871e420;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c6871f270_0 .net "a", 0 0, L_0x637c687688a0;  1 drivers
+v0x637c6871f340_0 .net "b", 0 0, L_0x637c68768940;  1 drivers
+v0x637c6871f410_0 .net "equal", 0 0, L_0x637c68768750;  1 drivers
+v0x637c6871f510_0 .net "out1", 0 0, L_0x637c687605a0;  1 drivers
+S_0x637c6871e930 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c6871e6e0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68768750 .functor NOT 1, L_0x637c687605a0, C4<0>, C4<0>, C4<0>;
+v0x637c6871eb90_0 .net "a", 0 0, L_0x637c687605a0;  alias, 1 drivers
+v0x637c6871ec70_0 .net "y", 0 0, L_0x637c68768750;  alias, 1 drivers
+S_0x637c6871ed90 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c6871e6e0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c687605a0 .functor XOR 1, L_0x637c687688a0, L_0x637c68768940, C4<0>, C4<0>;
+v0x637c6871efc0_0 .net "a", 0 0, L_0x637c687688a0;  alias, 1 drivers
+v0x637c6871f0a0_0 .net "b", 0 0, L_0x637c68768940;  alias, 1 drivers
+v0x637c6871f160_0 .net "y", 0 0, L_0x637c687605a0;  alias, 1 drivers
+S_0x637c6871f600 .scope generate, "cmp[32]" "cmp[32]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c6871f9f0 .param/l "i" 1 3 15, +C4<0100000>;
+S_0x637c6871fab0 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c6871f600;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c68720660_0 .net "a", 0 0, L_0x637c68768e00;  1 drivers
+v0x637c68720730_0 .net "b", 0 0, L_0x637c68768ea0;  1 drivers
+v0x637c68720800_0 .net "equal", 0 0, L_0x637c68768cb0;  1 drivers
+v0x637c68720900_0 .net "out1", 0 0, L_0x637c68768bf0;  1 drivers
+S_0x637c6871fd20 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c6871fab0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68768cb0 .functor NOT 1, L_0x637c68768bf0, C4<0>, C4<0>, C4<0>;
+v0x637c6871ff80_0 .net "a", 0 0, L_0x637c68768bf0;  alias, 1 drivers
+v0x637c68720060_0 .net "y", 0 0, L_0x637c68768cb0;  alias, 1 drivers
+S_0x637c68720180 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c6871fab0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68768bf0 .functor XOR 1, L_0x637c68768e00, L_0x637c68768ea0, C4<0>, C4<0>;
+v0x637c687203b0_0 .net "a", 0 0, L_0x637c68768e00;  alias, 1 drivers
+v0x637c68720490_0 .net "b", 0 0, L_0x637c68768ea0;  alias, 1 drivers
+v0x637c68720550_0 .net "y", 0 0, L_0x637c68768bf0;  alias, 1 drivers
+S_0x637c687209f0 .scope generate, "cmp[33]" "cmp[33]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c68720bd0 .param/l "i" 1 3 15, +C4<0100001>;
+S_0x637c68720c90 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c687209f0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c68721840_0 .net "a", 0 0, L_0x637c68769370;  1 drivers
+v0x637c68721910_0 .net "b", 0 0, L_0x637c68769410;  1 drivers
+v0x637c687219e0_0 .net "equal", 0 0, L_0x637c68769220;  1 drivers
+v0x637c68721ae0_0 .net "out1", 0 0, L_0x637c68769160;  1 drivers
+S_0x637c68720f00 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c68720c90;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68769220 .functor NOT 1, L_0x637c68769160, C4<0>, C4<0>, C4<0>;
+v0x637c68721160_0 .net "a", 0 0, L_0x637c68769160;  alias, 1 drivers
+v0x637c68721240_0 .net "y", 0 0, L_0x637c68769220;  alias, 1 drivers
+S_0x637c68721360 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c68720c90;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68769160 .functor XOR 1, L_0x637c68769370, L_0x637c68769410, C4<0>, C4<0>;
+v0x637c68721590_0 .net "a", 0 0, L_0x637c68769370;  alias, 1 drivers
+v0x637c68721670_0 .net "b", 0 0, L_0x637c68769410;  alias, 1 drivers
+v0x637c68721730_0 .net "y", 0 0, L_0x637c68769160;  alias, 1 drivers
+S_0x637c68721bd0 .scope generate, "cmp[34]" "cmp[34]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c68721db0 .param/l "i" 1 3 15, +C4<0100010>;
+S_0x637c68721e70 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c68721bd0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c68722a20_0 .net "a", 0 0, L_0x637c687698f0;  1 drivers
+v0x637c68722af0_0 .net "b", 0 0, L_0x637c68769990;  1 drivers
+v0x637c68722bc0_0 .net "equal", 0 0, L_0x637c687697a0;  1 drivers
+v0x637c68722cc0_0 .net "out1", 0 0, L_0x637c687696e0;  1 drivers
+S_0x637c687220e0 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c68721e70;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c687697a0 .functor NOT 1, L_0x637c687696e0, C4<0>, C4<0>, C4<0>;
+v0x637c68722340_0 .net "a", 0 0, L_0x637c687696e0;  alias, 1 drivers
+v0x637c68722420_0 .net "y", 0 0, L_0x637c687697a0;  alias, 1 drivers
+S_0x637c68722540 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c68721e70;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c687696e0 .functor XOR 1, L_0x637c687698f0, L_0x637c68769990, C4<0>, C4<0>;
+v0x637c68722770_0 .net "a", 0 0, L_0x637c687698f0;  alias, 1 drivers
+v0x637c68722850_0 .net "b", 0 0, L_0x637c68769990;  alias, 1 drivers
+v0x637c68722910_0 .net "y", 0 0, L_0x637c687696e0;  alias, 1 drivers
+S_0x637c68722db0 .scope generate, "cmp[35]" "cmp[35]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c68722f90 .param/l "i" 1 3 15, +C4<0100011>;
+S_0x637c68723050 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c68722db0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c68723c00_0 .net "a", 0 0, L_0x637c68769e80;  1 drivers
+v0x637c68723cd0_0 .net "b", 0 0, L_0x637c68769f20;  1 drivers
+v0x637c68723da0_0 .net "equal", 0 0, L_0x637c68769d30;  1 drivers
+v0x637c68723ea0_0 .net "out1", 0 0, L_0x637c68769c70;  1 drivers
+S_0x637c687232c0 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c68723050;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68769d30 .functor NOT 1, L_0x637c68769c70, C4<0>, C4<0>, C4<0>;
+v0x637c68723520_0 .net "a", 0 0, L_0x637c68769c70;  alias, 1 drivers
+v0x637c68723600_0 .net "y", 0 0, L_0x637c68769d30;  alias, 1 drivers
+S_0x637c68723720 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c68723050;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68769c70 .functor XOR 1, L_0x637c68769e80, L_0x637c68769f20, C4<0>, C4<0>;
+v0x637c68723950_0 .net "a", 0 0, L_0x637c68769e80;  alias, 1 drivers
+v0x637c68723a30_0 .net "b", 0 0, L_0x637c68769f20;  alias, 1 drivers
+v0x637c68723af0_0 .net "y", 0 0, L_0x637c68769c70;  alias, 1 drivers
+S_0x637c68723f90 .scope generate, "cmp[36]" "cmp[36]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c68724170 .param/l "i" 1 3 15, +C4<0100100>;
+S_0x637c68724230 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c68723f90;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c68724de0_0 .net "a", 0 0, L_0x637c6876a420;  1 drivers
+v0x637c68724eb0_0 .net "b", 0 0, L_0x637c6876a4c0;  1 drivers
+v0x637c68724f80_0 .net "equal", 0 0, L_0x637c6876a2d0;  1 drivers
+v0x637c68725080_0 .net "out1", 0 0, L_0x637c6876a210;  1 drivers
+S_0x637c687244a0 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c68724230;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c6876a2d0 .functor NOT 1, L_0x637c6876a210, C4<0>, C4<0>, C4<0>;
+v0x637c68724700_0 .net "a", 0 0, L_0x637c6876a210;  alias, 1 drivers
+v0x637c687247e0_0 .net "y", 0 0, L_0x637c6876a2d0;  alias, 1 drivers
+S_0x637c68724900 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c68724230;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c6876a210 .functor XOR 1, L_0x637c6876a420, L_0x637c6876a4c0, C4<0>, C4<0>;
+v0x637c68724b30_0 .net "a", 0 0, L_0x637c6876a420;  alias, 1 drivers
+v0x637c68724c10_0 .net "b", 0 0, L_0x637c6876a4c0;  alias, 1 drivers
+v0x637c68724cd0_0 .net "y", 0 0, L_0x637c6876a210;  alias, 1 drivers
+S_0x637c68725170 .scope generate, "cmp[37]" "cmp[37]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c68725350 .param/l "i" 1 3 15, +C4<0100101>;
+S_0x637c68725410 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c68725170;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c68725fc0_0 .net "a", 0 0, L_0x637c6876a9d0;  1 drivers
+v0x637c68726090_0 .net "b", 0 0, L_0x637c6876aa70;  1 drivers
+v0x637c68726160_0 .net "equal", 0 0, L_0x637c6876a880;  1 drivers
+v0x637c68726260_0 .net "out1", 0 0, L_0x637c6876a7c0;  1 drivers
+S_0x637c68725680 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c68725410;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c6876a880 .functor NOT 1, L_0x637c6876a7c0, C4<0>, C4<0>, C4<0>;
+v0x637c687258e0_0 .net "a", 0 0, L_0x637c6876a7c0;  alias, 1 drivers
+v0x637c687259c0_0 .net "y", 0 0, L_0x637c6876a880;  alias, 1 drivers
+S_0x637c68725ae0 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c68725410;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c6876a7c0 .functor XOR 1, L_0x637c6876a9d0, L_0x637c6876aa70, C4<0>, C4<0>;
+v0x637c68725d10_0 .net "a", 0 0, L_0x637c6876a9d0;  alias, 1 drivers
+v0x637c68725df0_0 .net "b", 0 0, L_0x637c6876aa70;  alias, 1 drivers
+v0x637c68725eb0_0 .net "y", 0 0, L_0x637c6876a7c0;  alias, 1 drivers
+S_0x637c68726350 .scope generate, "cmp[38]" "cmp[38]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c68726530 .param/l "i" 1 3 15, +C4<0100110>;
+S_0x637c687265f0 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c68726350;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c687271a0_0 .net "a", 0 0, L_0x637c6876af90;  1 drivers
+v0x637c68727270_0 .net "b", 0 0, L_0x637c6876b030;  1 drivers
+v0x637c68727340_0 .net "equal", 0 0, L_0x637c6876ae40;  1 drivers
+v0x637c68727440_0 .net "out1", 0 0, L_0x637c6876ad80;  1 drivers
+S_0x637c68726860 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c687265f0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c6876ae40 .functor NOT 1, L_0x637c6876ad80, C4<0>, C4<0>, C4<0>;
+v0x637c68726ac0_0 .net "a", 0 0, L_0x637c6876ad80;  alias, 1 drivers
+v0x637c68726ba0_0 .net "y", 0 0, L_0x637c6876ae40;  alias, 1 drivers
+S_0x637c68726cc0 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c687265f0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c6876ad80 .functor XOR 1, L_0x637c6876af90, L_0x637c6876b030, C4<0>, C4<0>;
+v0x637c68726ef0_0 .net "a", 0 0, L_0x637c6876af90;  alias, 1 drivers
+v0x637c68726fd0_0 .net "b", 0 0, L_0x637c6876b030;  alias, 1 drivers
+v0x637c68727090_0 .net "y", 0 0, L_0x637c6876ad80;  alias, 1 drivers
+S_0x637c68727530 .scope generate, "cmp[39]" "cmp[39]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c68727710 .param/l "i" 1 3 15, +C4<0100111>;
+S_0x637c687277d0 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c68727530;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c68728380_0 .net "a", 0 0, L_0x637c6876b560;  1 drivers
+v0x637c68728450_0 .net "b", 0 0, L_0x637c6876b600;  1 drivers
+v0x637c68728520_0 .net "equal", 0 0, L_0x637c6876b410;  1 drivers
+v0x637c68728620_0 .net "out1", 0 0, L_0x637c6876b350;  1 drivers
+S_0x637c68727a40 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c687277d0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c6876b410 .functor NOT 1, L_0x637c6876b350, C4<0>, C4<0>, C4<0>;
+v0x637c68727ca0_0 .net "a", 0 0, L_0x637c6876b350;  alias, 1 drivers
+v0x637c68727d80_0 .net "y", 0 0, L_0x637c6876b410;  alias, 1 drivers
+S_0x637c68727ea0 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c687277d0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c6876b350 .functor XOR 1, L_0x637c6876b560, L_0x637c6876b600, C4<0>, C4<0>;
+v0x637c687280d0_0 .net "a", 0 0, L_0x637c6876b560;  alias, 1 drivers
+v0x637c687281b0_0 .net "b", 0 0, L_0x637c6876b600;  alias, 1 drivers
+v0x637c68728270_0 .net "y", 0 0, L_0x637c6876b350;  alias, 1 drivers
+S_0x637c68728710 .scope generate, "cmp[40]" "cmp[40]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c687288f0 .param/l "i" 1 3 15, +C4<0101000>;
+S_0x637c687289b0 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c68728710;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c68729560_0 .net "a", 0 0, L_0x637c6876bb40;  1 drivers
+v0x637c68729630_0 .net "b", 0 0, L_0x637c6876bbe0;  1 drivers
+v0x637c68729700_0 .net "equal", 0 0, L_0x637c6876b9f0;  1 drivers
+v0x637c68729800_0 .net "out1", 0 0, L_0x637c6876b930;  1 drivers
+S_0x637c68728c20 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c687289b0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c6876b9f0 .functor NOT 1, L_0x637c6876b930, C4<0>, C4<0>, C4<0>;
+v0x637c68728e80_0 .net "a", 0 0, L_0x637c6876b930;  alias, 1 drivers
+v0x637c68728f60_0 .net "y", 0 0, L_0x637c6876b9f0;  alias, 1 drivers
+S_0x637c68729080 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c687289b0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c6876b930 .functor XOR 1, L_0x637c6876bb40, L_0x637c6876bbe0, C4<0>, C4<0>;
+v0x637c687292b0_0 .net "a", 0 0, L_0x637c6876bb40;  alias, 1 drivers
+v0x637c68729390_0 .net "b", 0 0, L_0x637c6876bbe0;  alias, 1 drivers
+v0x637c68729450_0 .net "y", 0 0, L_0x637c6876b930;  alias, 1 drivers
+S_0x637c687298f0 .scope generate, "cmp[41]" "cmp[41]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c68729ad0 .param/l "i" 1 3 15, +C4<0101001>;
+S_0x637c68729b90 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c687298f0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c6872a740_0 .net "a", 0 0, L_0x637c6876c130;  1 drivers
+v0x637c6872a810_0 .net "b", 0 0, L_0x637c6876c1d0;  1 drivers
+v0x637c6872a8e0_0 .net "equal", 0 0, L_0x637c6876bfe0;  1 drivers
+v0x637c6872a9e0_0 .net "out1", 0 0, L_0x637c6876bf20;  1 drivers
+S_0x637c68729e00 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c68729b90;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c6876bfe0 .functor NOT 1, L_0x637c6876bf20, C4<0>, C4<0>, C4<0>;
+v0x637c6872a060_0 .net "a", 0 0, L_0x637c6876bf20;  alias, 1 drivers
+v0x637c6872a140_0 .net "y", 0 0, L_0x637c6876bfe0;  alias, 1 drivers
+S_0x637c6872a260 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c68729b90;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c6876bf20 .functor XOR 1, L_0x637c6876c130, L_0x637c6876c1d0, C4<0>, C4<0>;
+v0x637c6872a490_0 .net "a", 0 0, L_0x637c6876c130;  alias, 1 drivers
+v0x637c6872a570_0 .net "b", 0 0, L_0x637c6876c1d0;  alias, 1 drivers
+v0x637c6872a630_0 .net "y", 0 0, L_0x637c6876bf20;  alias, 1 drivers
+S_0x637c6872aad0 .scope generate, "cmp[42]" "cmp[42]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c6872acb0 .param/l "i" 1 3 15, +C4<0101010>;
+S_0x637c6872ad70 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c6872aad0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c6872b920_0 .net "a", 0 0, L_0x637c6876c730;  1 drivers
+v0x637c6872b9f0_0 .net "b", 0 0, L_0x637c6876c7d0;  1 drivers
+v0x637c6872bac0_0 .net "equal", 0 0, L_0x637c6876c5e0;  1 drivers
+v0x637c6872bbc0_0 .net "out1", 0 0, L_0x637c6876c520;  1 drivers
+S_0x637c6872afe0 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c6872ad70;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c6876c5e0 .functor NOT 1, L_0x637c6876c520, C4<0>, C4<0>, C4<0>;
+v0x637c6872b240_0 .net "a", 0 0, L_0x637c6876c520;  alias, 1 drivers
+v0x637c6872b320_0 .net "y", 0 0, L_0x637c6876c5e0;  alias, 1 drivers
+S_0x637c6872b440 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c6872ad70;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c6876c520 .functor XOR 1, L_0x637c6876c730, L_0x637c6876c7d0, C4<0>, C4<0>;
+v0x637c6872b670_0 .net "a", 0 0, L_0x637c6876c730;  alias, 1 drivers
+v0x637c6872b750_0 .net "b", 0 0, L_0x637c6876c7d0;  alias, 1 drivers
+v0x637c6872b810_0 .net "y", 0 0, L_0x637c6876c520;  alias, 1 drivers
+S_0x637c6872bcb0 .scope generate, "cmp[43]" "cmp[43]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c6872be90 .param/l "i" 1 3 15, +C4<0101011>;
+S_0x637c6872bf50 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c6872bcb0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c6872cb00_0 .net "a", 0 0, L_0x637c6876cd40;  1 drivers
+v0x637c6872cbd0_0 .net "b", 0 0, L_0x637c6876cde0;  1 drivers
+v0x637c6872cca0_0 .net "equal", 0 0, L_0x637c6876cbf0;  1 drivers
+v0x637c6872cda0_0 .net "out1", 0 0, L_0x637c6876cb30;  1 drivers
+S_0x637c6872c1c0 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c6872bf50;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c6876cbf0 .functor NOT 1, L_0x637c6876cb30, C4<0>, C4<0>, C4<0>;
+v0x637c6872c420_0 .net "a", 0 0, L_0x637c6876cb30;  alias, 1 drivers
+v0x637c6872c500_0 .net "y", 0 0, L_0x637c6876cbf0;  alias, 1 drivers
+S_0x637c6872c620 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c6872bf50;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c6876cb30 .functor XOR 1, L_0x637c6876cd40, L_0x637c6876cde0, C4<0>, C4<0>;
+v0x637c6872c850_0 .net "a", 0 0, L_0x637c6876cd40;  alias, 1 drivers
+v0x637c6872c930_0 .net "b", 0 0, L_0x637c6876cde0;  alias, 1 drivers
+v0x637c6872c9f0_0 .net "y", 0 0, L_0x637c6876cb30;  alias, 1 drivers
+S_0x637c6872ce90 .scope generate, "cmp[44]" "cmp[44]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c6872d070 .param/l "i" 1 3 15, +C4<0101100>;
+S_0x637c6872d130 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c6872ce90;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c6872dce0_0 .net "a", 0 0, L_0x637c6876d360;  1 drivers
+v0x637c6872ddb0_0 .net "b", 0 0, L_0x637c6876d400;  1 drivers
+v0x637c6872de80_0 .net "equal", 0 0, L_0x637c6876d210;  1 drivers
+v0x637c6872df80_0 .net "out1", 0 0, L_0x637c6876d150;  1 drivers
+S_0x637c6872d3a0 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c6872d130;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c6876d210 .functor NOT 1, L_0x637c6876d150, C4<0>, C4<0>, C4<0>;
+v0x637c6872d600_0 .net "a", 0 0, L_0x637c6876d150;  alias, 1 drivers
+v0x637c6872d6e0_0 .net "y", 0 0, L_0x637c6876d210;  alias, 1 drivers
+S_0x637c6872d800 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c6872d130;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c6876d150 .functor XOR 1, L_0x637c6876d360, L_0x637c6876d400, C4<0>, C4<0>;
+v0x637c6872da30_0 .net "a", 0 0, L_0x637c6876d360;  alias, 1 drivers
+v0x637c6872db10_0 .net "b", 0 0, L_0x637c6876d400;  alias, 1 drivers
+v0x637c6872dbd0_0 .net "y", 0 0, L_0x637c6876d150;  alias, 1 drivers
+S_0x637c6872e070 .scope generate, "cmp[45]" "cmp[45]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c6872e250 .param/l "i" 1 3 15, +C4<0101101>;
+S_0x637c6872e310 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c6872e070;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c6872eec0_0 .net "a", 0 0, L_0x637c6876d990;  1 drivers
+v0x637c6872ef90_0 .net "b", 0 0, L_0x637c6876da30;  1 drivers
+v0x637c6872f060_0 .net "equal", 0 0, L_0x637c6876d840;  1 drivers
+v0x637c6872f160_0 .net "out1", 0 0, L_0x637c6876d780;  1 drivers
+S_0x637c6872e580 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c6872e310;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c6876d840 .functor NOT 1, L_0x637c6876d780, C4<0>, C4<0>, C4<0>;
+v0x637c6872e7e0_0 .net "a", 0 0, L_0x637c6876d780;  alias, 1 drivers
+v0x637c6872e8c0_0 .net "y", 0 0, L_0x637c6876d840;  alias, 1 drivers
+S_0x637c6872e9e0 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c6872e310;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c6876d780 .functor XOR 1, L_0x637c6876d990, L_0x637c6876da30, C4<0>, C4<0>;
+v0x637c6872ec10_0 .net "a", 0 0, L_0x637c6876d990;  alias, 1 drivers
+v0x637c6872ecf0_0 .net "b", 0 0, L_0x637c6876da30;  alias, 1 drivers
+v0x637c6872edb0_0 .net "y", 0 0, L_0x637c6876d780;  alias, 1 drivers
+S_0x637c6872f250 .scope generate, "cmp[46]" "cmp[46]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c6872f430 .param/l "i" 1 3 15, +C4<0101110>;
+S_0x637c6872f4f0 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c6872f250;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c687300a0_0 .net "a", 0 0, L_0x637c6876dfd0;  1 drivers
+v0x637c68730170_0 .net "b", 0 0, L_0x637c6876e070;  1 drivers
+v0x637c68730240_0 .net "equal", 0 0, L_0x637c6876de80;  1 drivers
+v0x637c68730340_0 .net "out1", 0 0, L_0x637c6876ddc0;  1 drivers
+S_0x637c6872f760 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c6872f4f0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c6876de80 .functor NOT 1, L_0x637c6876ddc0, C4<0>, C4<0>, C4<0>;
+v0x637c6872f9c0_0 .net "a", 0 0, L_0x637c6876ddc0;  alias, 1 drivers
+v0x637c6872faa0_0 .net "y", 0 0, L_0x637c6876de80;  alias, 1 drivers
+S_0x637c6872fbc0 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c6872f4f0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c6876ddc0 .functor XOR 1, L_0x637c6876dfd0, L_0x637c6876e070, C4<0>, C4<0>;
+v0x637c6872fdf0_0 .net "a", 0 0, L_0x637c6876dfd0;  alias, 1 drivers
+v0x637c6872fed0_0 .net "b", 0 0, L_0x637c6876e070;  alias, 1 drivers
+v0x637c6872ff90_0 .net "y", 0 0, L_0x637c6876ddc0;  alias, 1 drivers
+S_0x637c68730430 .scope generate, "cmp[47]" "cmp[47]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c68730610 .param/l "i" 1 3 15, +C4<0101111>;
+S_0x637c687306d0 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c68730430;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c68731280_0 .net "a", 0 0, L_0x637c6876e620;  1 drivers
+v0x637c68731350_0 .net "b", 0 0, L_0x637c6876e6c0;  1 drivers
+v0x637c68731420_0 .net "equal", 0 0, L_0x637c6876e4d0;  1 drivers
+v0x637c68731520_0 .net "out1", 0 0, L_0x637c6876e410;  1 drivers
+S_0x637c68730940 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c687306d0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c6876e4d0 .functor NOT 1, L_0x637c6876e410, C4<0>, C4<0>, C4<0>;
+v0x637c68730ba0_0 .net "a", 0 0, L_0x637c6876e410;  alias, 1 drivers
+v0x637c68730c80_0 .net "y", 0 0, L_0x637c6876e4d0;  alias, 1 drivers
+S_0x637c68730da0 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c687306d0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c6876e410 .functor XOR 1, L_0x637c6876e620, L_0x637c6876e6c0, C4<0>, C4<0>;
+v0x637c68730fd0_0 .net "a", 0 0, L_0x637c6876e620;  alias, 1 drivers
+v0x637c687310b0_0 .net "b", 0 0, L_0x637c6876e6c0;  alias, 1 drivers
+v0x637c68731170_0 .net "y", 0 0, L_0x637c6876e410;  alias, 1 drivers
+S_0x637c68731610 .scope generate, "cmp[48]" "cmp[48]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c687317f0 .param/l "i" 1 3 15, +C4<0110000>;
+S_0x637c687318b0 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c68731610;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c68732460_0 .net "a", 0 0, L_0x637c6876ec80;  1 drivers
+v0x637c68732530_0 .net "b", 0 0, L_0x637c6876ed20;  1 drivers
+v0x637c68732600_0 .net "equal", 0 0, L_0x637c6876eb30;  1 drivers
+v0x637c68732700_0 .net "out1", 0 0, L_0x637c6876ea70;  1 drivers
+S_0x637c68731b20 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c687318b0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c6876eb30 .functor NOT 1, L_0x637c6876ea70, C4<0>, C4<0>, C4<0>;
+v0x637c68731d80_0 .net "a", 0 0, L_0x637c6876ea70;  alias, 1 drivers
+v0x637c68731e60_0 .net "y", 0 0, L_0x637c6876eb30;  alias, 1 drivers
+S_0x637c68731f80 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c687318b0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c6876ea70 .functor XOR 1, L_0x637c6876ec80, L_0x637c6876ed20, C4<0>, C4<0>;
+v0x637c687321b0_0 .net "a", 0 0, L_0x637c6876ec80;  alias, 1 drivers
+v0x637c68732290_0 .net "b", 0 0, L_0x637c6876ed20;  alias, 1 drivers
+v0x637c68732350_0 .net "y", 0 0, L_0x637c6876ea70;  alias, 1 drivers
+S_0x637c687327f0 .scope generate, "cmp[49]" "cmp[49]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c687329d0 .param/l "i" 1 3 15, +C4<0110001>;
+S_0x637c68732a90 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c687327f0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c68733640_0 .net "a", 0 0, L_0x637c6876f2f0;  1 drivers
+v0x637c68733710_0 .net "b", 0 0, L_0x637c6876f390;  1 drivers
+v0x637c687337e0_0 .net "equal", 0 0, L_0x637c6876f1a0;  1 drivers
+v0x637c687338e0_0 .net "out1", 0 0, L_0x637c6876f0e0;  1 drivers
+S_0x637c68732d00 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c68732a90;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c6876f1a0 .functor NOT 1, L_0x637c6876f0e0, C4<0>, C4<0>, C4<0>;
+v0x637c68732f60_0 .net "a", 0 0, L_0x637c6876f0e0;  alias, 1 drivers
+v0x637c68733040_0 .net "y", 0 0, L_0x637c6876f1a0;  alias, 1 drivers
+S_0x637c68733160 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c68732a90;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c6876f0e0 .functor XOR 1, L_0x637c6876f2f0, L_0x637c6876f390, C4<0>, C4<0>;
+v0x637c68733390_0 .net "a", 0 0, L_0x637c6876f2f0;  alias, 1 drivers
+v0x637c68733470_0 .net "b", 0 0, L_0x637c6876f390;  alias, 1 drivers
+v0x637c68733530_0 .net "y", 0 0, L_0x637c6876f0e0;  alias, 1 drivers
+S_0x637c687339d0 .scope generate, "cmp[50]" "cmp[50]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c68733bb0 .param/l "i" 1 3 15, +C4<0110010>;
+S_0x637c68733c70 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c687339d0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c68734820_0 .net "a", 0 0, L_0x637c6876f970;  1 drivers
+v0x637c687348f0_0 .net "b", 0 0, L_0x637c6876fa10;  1 drivers
+v0x637c687349c0_0 .net "equal", 0 0, L_0x637c6876f820;  1 drivers
+v0x637c68734ac0_0 .net "out1", 0 0, L_0x637c6876f760;  1 drivers
+S_0x637c68733ee0 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c68733c70;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c6876f820 .functor NOT 1, L_0x637c6876f760, C4<0>, C4<0>, C4<0>;
+v0x637c68734140_0 .net "a", 0 0, L_0x637c6876f760;  alias, 1 drivers
+v0x637c68734220_0 .net "y", 0 0, L_0x637c6876f820;  alias, 1 drivers
+S_0x637c68734340 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c68733c70;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c6876f760 .functor XOR 1, L_0x637c6876f970, L_0x637c6876fa10, C4<0>, C4<0>;
+v0x637c68734570_0 .net "a", 0 0, L_0x637c6876f970;  alias, 1 drivers
+v0x637c68734650_0 .net "b", 0 0, L_0x637c6876fa10;  alias, 1 drivers
+v0x637c68734710_0 .net "y", 0 0, L_0x637c6876f760;  alias, 1 drivers
+S_0x637c68734bb0 .scope generate, "cmp[51]" "cmp[51]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c68734d90 .param/l "i" 1 3 15, +C4<0110011>;
+S_0x637c68734e50 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c68734bb0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c68735a00_0 .net "a", 0 0, L_0x637c68770000;  1 drivers
+v0x637c68735ad0_0 .net "b", 0 0, L_0x637c687700a0;  1 drivers
+v0x637c68735ba0_0 .net "equal", 0 0, L_0x637c6876feb0;  1 drivers
+v0x637c68735ca0_0 .net "out1", 0 0, L_0x637c6876fdf0;  1 drivers
+S_0x637c687350c0 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c68734e50;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c6876feb0 .functor NOT 1, L_0x637c6876fdf0, C4<0>, C4<0>, C4<0>;
+v0x637c68735320_0 .net "a", 0 0, L_0x637c6876fdf0;  alias, 1 drivers
+v0x637c68735400_0 .net "y", 0 0, L_0x637c6876feb0;  alias, 1 drivers
+S_0x637c68735520 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c68734e50;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c6876fdf0 .functor XOR 1, L_0x637c68770000, L_0x637c687700a0, C4<0>, C4<0>;
+v0x637c68735750_0 .net "a", 0 0, L_0x637c68770000;  alias, 1 drivers
+v0x637c68735830_0 .net "b", 0 0, L_0x637c687700a0;  alias, 1 drivers
+v0x637c687358f0_0 .net "y", 0 0, L_0x637c6876fdf0;  alias, 1 drivers
+S_0x637c68735d90 .scope generate, "cmp[52]" "cmp[52]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c68735f70 .param/l "i" 1 3 15, +C4<0110100>;
+S_0x637c68736030 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c68735d90;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c68736be0_0 .net "a", 0 0, L_0x637c68770700;  1 drivers
+v0x637c68736cb0_0 .net "b", 0 0, L_0x637c687707a0;  1 drivers
+v0x637c68736d80_0 .net "equal", 0 0, L_0x637c68770570;  1 drivers
+v0x637c68736e80_0 .net "out1", 0 0, L_0x637c68770490;  1 drivers
+S_0x637c687362a0 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c68736030;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68770570 .functor NOT 1, L_0x637c68770490, C4<0>, C4<0>, C4<0>;
+v0x637c68736500_0 .net "a", 0 0, L_0x637c68770490;  alias, 1 drivers
+v0x637c687365e0_0 .net "y", 0 0, L_0x637c68770570;  alias, 1 drivers
+S_0x637c68736700 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c68736030;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68770490 .functor XOR 1, L_0x637c68770700, L_0x637c687707a0, C4<0>, C4<0>;
+v0x637c68736930_0 .net "a", 0 0, L_0x637c68770700;  alias, 1 drivers
+v0x637c68736a10_0 .net "b", 0 0, L_0x637c687707a0;  alias, 1 drivers
+v0x637c68736ad0_0 .net "y", 0 0, L_0x637c68770490;  alias, 1 drivers
+S_0x637c68736f70 .scope generate, "cmp[53]" "cmp[53]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c68737150 .param/l "i" 1 3 15, +C4<0110101>;
+S_0x637c68737210 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c68736f70;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c68737dc0_0 .net "a", 0 0, L_0x637c68770e30;  1 drivers
+v0x637c68737e90_0 .net "b", 0 0, L_0x637c68770ed0;  1 drivers
+v0x637c68737f60_0 .net "equal", 0 0, L_0x637c68770ca0;  1 drivers
+v0x637c68738060_0 .net "out1", 0 0, L_0x637c68770ba0;  1 drivers
+S_0x637c68737480 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c68737210;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68770ca0 .functor NOT 1, L_0x637c68770ba0, C4<0>, C4<0>, C4<0>;
+v0x637c687376e0_0 .net "a", 0 0, L_0x637c68770ba0;  alias, 1 drivers
+v0x637c687377c0_0 .net "y", 0 0, L_0x637c68770ca0;  alias, 1 drivers
+S_0x637c687378e0 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c68737210;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68770ba0 .functor XOR 1, L_0x637c68770e30, L_0x637c68770ed0, C4<0>, C4<0>;
+v0x637c68737b10_0 .net "a", 0 0, L_0x637c68770e30;  alias, 1 drivers
+v0x637c68737bf0_0 .net "b", 0 0, L_0x637c68770ed0;  alias, 1 drivers
+v0x637c68737cb0_0 .net "y", 0 0, L_0x637c68770ba0;  alias, 1 drivers
+S_0x637c68738150 .scope generate, "cmp[54]" "cmp[54]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c68738330 .param/l "i" 1 3 15, +C4<0110110>;
+S_0x637c687383f0 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c68738150;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c68738fa0_0 .net "a", 0 0, L_0x637c68771570;  1 drivers
+v0x637c68739070_0 .net "b", 0 0, L_0x637c68771610;  1 drivers
+v0x637c68739140_0 .net "equal", 0 0, L_0x637c687713e0;  1 drivers
+v0x637c68739240_0 .net "out1", 0 0, L_0x637c687712e0;  1 drivers
+S_0x637c68738660 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c687383f0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c687713e0 .functor NOT 1, L_0x637c687712e0, C4<0>, C4<0>, C4<0>;
+v0x637c687388c0_0 .net "a", 0 0, L_0x637c687712e0;  alias, 1 drivers
+v0x637c687389a0_0 .net "y", 0 0, L_0x637c687713e0;  alias, 1 drivers
+S_0x637c68738ac0 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c687383f0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c687712e0 .functor XOR 1, L_0x637c68771570, L_0x637c68771610, C4<0>, C4<0>;
+v0x637c68738cf0_0 .net "a", 0 0, L_0x637c68771570;  alias, 1 drivers
+v0x637c68738dd0_0 .net "b", 0 0, L_0x637c68771610;  alias, 1 drivers
+v0x637c68738e90_0 .net "y", 0 0, L_0x637c687712e0;  alias, 1 drivers
+S_0x637c68739330 .scope generate, "cmp[55]" "cmp[55]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c68739510 .param/l "i" 1 3 15, +C4<0110111>;
+S_0x637c687395d0 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c68739330;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c6873a180_0 .net "a", 0 0, L_0x637c68771cc0;  1 drivers
+v0x637c6873a250_0 .net "b", 0 0, L_0x637c68771d60;  1 drivers
+v0x637c6873a320_0 .net "equal", 0 0, L_0x637c68771b30;  1 drivers
+v0x637c6873a420_0 .net "out1", 0 0, L_0x637c68771a30;  1 drivers
+S_0x637c68739840 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c687395d0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68771b30 .functor NOT 1, L_0x637c68771a30, C4<0>, C4<0>, C4<0>;
+v0x637c68739aa0_0 .net "a", 0 0, L_0x637c68771a30;  alias, 1 drivers
+v0x637c68739b80_0 .net "y", 0 0, L_0x637c68771b30;  alias, 1 drivers
+S_0x637c68739ca0 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c687395d0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68771a30 .functor XOR 1, L_0x637c68771cc0, L_0x637c68771d60, C4<0>, C4<0>;
+v0x637c68739ed0_0 .net "a", 0 0, L_0x637c68771cc0;  alias, 1 drivers
+v0x637c68739fb0_0 .net "b", 0 0, L_0x637c68771d60;  alias, 1 drivers
+v0x637c6873a070_0 .net "y", 0 0, L_0x637c68771a30;  alias, 1 drivers
+S_0x637c6873a510 .scope generate, "cmp[56]" "cmp[56]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c6873a6f0 .param/l "i" 1 3 15, +C4<0111000>;
+S_0x637c6873a7b0 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c6873a510;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c6873b360_0 .net "a", 0 0, L_0x637c68772420;  1 drivers
+v0x637c6873b430_0 .net "b", 0 0, L_0x637c687724c0;  1 drivers
+v0x637c6873b500_0 .net "equal", 0 0, L_0x637c68772290;  1 drivers
+v0x637c6873b600_0 .net "out1", 0 0, L_0x637c68772190;  1 drivers
+S_0x637c6873aa20 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c6873a7b0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68772290 .functor NOT 1, L_0x637c68772190, C4<0>, C4<0>, C4<0>;
+v0x637c6873ac80_0 .net "a", 0 0, L_0x637c68772190;  alias, 1 drivers
+v0x637c6873ad60_0 .net "y", 0 0, L_0x637c68772290;  alias, 1 drivers
+S_0x637c6873ae80 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c6873a7b0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68772190 .functor XOR 1, L_0x637c68772420, L_0x637c687724c0, C4<0>, C4<0>;
+v0x637c6873b0b0_0 .net "a", 0 0, L_0x637c68772420;  alias, 1 drivers
+v0x637c6873b190_0 .net "b", 0 0, L_0x637c687724c0;  alias, 1 drivers
+v0x637c6873b250_0 .net "y", 0 0, L_0x637c68772190;  alias, 1 drivers
+S_0x637c6873b6f0 .scope generate, "cmp[57]" "cmp[57]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c6873b8d0 .param/l "i" 1 3 15, +C4<0111001>;
+S_0x637c6873b990 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c6873b6f0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c6873c540_0 .net "a", 0 0, L_0x637c68772b90;  1 drivers
+v0x637c6873c610_0 .net "b", 0 0, L_0x637c68772c30;  1 drivers
+v0x637c6873c6e0_0 .net "equal", 0 0, L_0x637c68772a00;  1 drivers
+v0x637c6873c7e0_0 .net "out1", 0 0, L_0x637c68772900;  1 drivers
+S_0x637c6873bc00 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c6873b990;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68772a00 .functor NOT 1, L_0x637c68772900, C4<0>, C4<0>, C4<0>;
+v0x637c6873be60_0 .net "a", 0 0, L_0x637c68772900;  alias, 1 drivers
+v0x637c6873bf40_0 .net "y", 0 0, L_0x637c68772a00;  alias, 1 drivers
+S_0x637c6873c060 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c6873b990;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68772900 .functor XOR 1, L_0x637c68772b90, L_0x637c68772c30, C4<0>, C4<0>;
+v0x637c6873c290_0 .net "a", 0 0, L_0x637c68772b90;  alias, 1 drivers
+v0x637c6873c370_0 .net "b", 0 0, L_0x637c68772c30;  alias, 1 drivers
+v0x637c6873c430_0 .net "y", 0 0, L_0x637c68772900;  alias, 1 drivers
+S_0x637c6873c8d0 .scope generate, "cmp[58]" "cmp[58]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c6873cab0 .param/l "i" 1 3 15, +C4<0111010>;
+S_0x637c6873cb70 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c6873c8d0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c6873d720_0 .net "a", 0 0, L_0x637c68773310;  1 drivers
+v0x637c6873d7f0_0 .net "b", 0 0, L_0x637c687733b0;  1 drivers
+v0x637c6873d8c0_0 .net "equal", 0 0, L_0x637c68773180;  1 drivers
+v0x637c6873d9c0_0 .net "out1", 0 0, L_0x637c68773080;  1 drivers
+S_0x637c6873cde0 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c6873cb70;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68773180 .functor NOT 1, L_0x637c68773080, C4<0>, C4<0>, C4<0>;
+v0x637c6873d040_0 .net "a", 0 0, L_0x637c68773080;  alias, 1 drivers
+v0x637c6873d120_0 .net "y", 0 0, L_0x637c68773180;  alias, 1 drivers
+S_0x637c6873d240 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c6873cb70;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68773080 .functor XOR 1, L_0x637c68773310, L_0x637c687733b0, C4<0>, C4<0>;
+v0x637c6873d470_0 .net "a", 0 0, L_0x637c68773310;  alias, 1 drivers
+v0x637c6873d550_0 .net "b", 0 0, L_0x637c687733b0;  alias, 1 drivers
+v0x637c6873d610_0 .net "y", 0 0, L_0x637c68773080;  alias, 1 drivers
+S_0x637c6873dab0 .scope generate, "cmp[59]" "cmp[59]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c6873dc90 .param/l "i" 1 3 15, +C4<0111011>;
+S_0x637c6873dd50 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c6873dab0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c6873e900_0 .net "a", 0 0, L_0x637c68773aa0;  1 drivers
+v0x637c6873e9d0_0 .net "b", 0 0, L_0x637c68773b40;  1 drivers
+v0x637c6873eaa0_0 .net "equal", 0 0, L_0x637c68773910;  1 drivers
+v0x637c6873eba0_0 .net "out1", 0 0, L_0x637c68773810;  1 drivers
+S_0x637c6873dfc0 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c6873dd50;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68773910 .functor NOT 1, L_0x637c68773810, C4<0>, C4<0>, C4<0>;
+v0x637c6873e220_0 .net "a", 0 0, L_0x637c68773810;  alias, 1 drivers
+v0x637c6873e300_0 .net "y", 0 0, L_0x637c68773910;  alias, 1 drivers
+S_0x637c6873e420 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c6873dd50;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68773810 .functor XOR 1, L_0x637c68773aa0, L_0x637c68773b40, C4<0>, C4<0>;
+v0x637c6873e650_0 .net "a", 0 0, L_0x637c68773aa0;  alias, 1 drivers
+v0x637c6873e730_0 .net "b", 0 0, L_0x637c68773b40;  alias, 1 drivers
+v0x637c6873e7f0_0 .net "y", 0 0, L_0x637c68773810;  alias, 1 drivers
+S_0x637c6873ec90 .scope generate, "cmp[60]" "cmp[60]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c6873ee70 .param/l "i" 1 3 15, +C4<0111100>;
+S_0x637c6873ef30 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c6873ec90;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c6873fae0_0 .net "a", 0 0, L_0x637c68774240;  1 drivers
+v0x637c6873fbb0_0 .net "b", 0 0, L_0x637c687742e0;  1 drivers
+v0x637c6873fc80_0 .net "equal", 0 0, L_0x637c687740b0;  1 drivers
+v0x637c6873fd80_0 .net "out1", 0 0, L_0x637c68773fb0;  1 drivers
+S_0x637c6873f1a0 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c6873ef30;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c687740b0 .functor NOT 1, L_0x637c68773fb0, C4<0>, C4<0>, C4<0>;
+v0x637c6873f400_0 .net "a", 0 0, L_0x637c68773fb0;  alias, 1 drivers
+v0x637c6873f4e0_0 .net "y", 0 0, L_0x637c687740b0;  alias, 1 drivers
+S_0x637c6873f600 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c6873ef30;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68773fb0 .functor XOR 1, L_0x637c68774240, L_0x637c687742e0, C4<0>, C4<0>;
+v0x637c6873f830_0 .net "a", 0 0, L_0x637c68774240;  alias, 1 drivers
+v0x637c6873f910_0 .net "b", 0 0, L_0x637c687742e0;  alias, 1 drivers
+v0x637c6873f9d0_0 .net "y", 0 0, L_0x637c68773fb0;  alias, 1 drivers
+S_0x637c6873fe70 .scope generate, "cmp[61]" "cmp[61]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c68740050 .param/l "i" 1 3 15, +C4<0111101>;
+S_0x637c68740110 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c6873fe70;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c68740cc0_0 .net "a", 0 0, L_0x637c687749f0;  1 drivers
+v0x637c68740d90_0 .net "b", 0 0, L_0x637c68774a90;  1 drivers
+v0x637c68740e60_0 .net "equal", 0 0, L_0x637c68774860;  1 drivers
+v0x637c68740f60_0 .net "out1", 0 0, L_0x637c68774760;  1 drivers
+S_0x637c68740380 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c68740110;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68774860 .functor NOT 1, L_0x637c68774760, C4<0>, C4<0>, C4<0>;
+v0x637c687405e0_0 .net "a", 0 0, L_0x637c68774760;  alias, 1 drivers
+v0x637c687406c0_0 .net "y", 0 0, L_0x637c68774860;  alias, 1 drivers
+S_0x637c687407e0 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c68740110;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68774760 .functor XOR 1, L_0x637c687749f0, L_0x637c68774a90, C4<0>, C4<0>;
+v0x637c68740a10_0 .net "a", 0 0, L_0x637c687749f0;  alias, 1 drivers
+v0x637c68740af0_0 .net "b", 0 0, L_0x637c68774a90;  alias, 1 drivers
+v0x637c68740bb0_0 .net "y", 0 0, L_0x637c68774760;  alias, 1 drivers
+S_0x637c68741050 .scope generate, "cmp[62]" "cmp[62]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c68741230 .param/l "i" 1 3 15, +C4<0111110>;
+S_0x637c687412f0 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c68741050;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c68741ea0_0 .net "a", 0 0, L_0x637c687751b0;  1 drivers
+v0x637c68741f70_0 .net "b", 0 0, L_0x637c68775a60;  1 drivers
+v0x637c68742040_0 .net "equal", 0 0, L_0x637c68775020;  1 drivers
+v0x637c68742140_0 .net "out1", 0 0, L_0x637c68774f20;  1 drivers
+S_0x637c68741560 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c687412f0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68775020 .functor NOT 1, L_0x637c68774f20, C4<0>, C4<0>, C4<0>;
+v0x637c687417c0_0 .net "a", 0 0, L_0x637c68774f20;  alias, 1 drivers
+v0x637c687418a0_0 .net "y", 0 0, L_0x637c68775020;  alias, 1 drivers
+S_0x637c687419c0 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c687412f0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68774f20 .functor XOR 1, L_0x637c687751b0, L_0x637c68775a60, C4<0>, C4<0>;
+v0x637c68741bf0_0 .net "a", 0 0, L_0x637c687751b0;  alias, 1 drivers
+v0x637c68741cd0_0 .net "b", 0 0, L_0x637c68775a60;  alias, 1 drivers
+v0x637c68741d90_0 .net "y", 0 0, L_0x637c68774f20;  alias, 1 drivers
+S_0x637c68742230 .scope generate, "cmp[63]" "cmp[63]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c68742410 .param/l "i" 1 3 15, +C4<0111111>;
+S_0x637c687424d0 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c68742230;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c68743080_0 .net "a", 0 0, L_0x637c68776920;  1 drivers
+v0x637c68743150_0 .net "b", 0 0, L_0x637c687769c0;  1 drivers
+v0x637c68743220_0 .net "equal", 0 0, L_0x637c687767d0;  1 drivers
+v0x637c68743320_0 .net "out1", 0 0, L_0x637c68776710;  1 drivers
+S_0x637c68742740 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c687424d0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c687767d0 .functor NOT 1, L_0x637c68776710, C4<0>, C4<0>, C4<0>;
+v0x637c687429a0_0 .net "a", 0 0, L_0x637c68776710;  alias, 1 drivers
+v0x637c68742a80_0 .net "y", 0 0, L_0x637c687767d0;  alias, 1 drivers
+S_0x637c68742ba0 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c687424d0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68776710 .functor XOR 1, L_0x637c68776920, L_0x637c687769c0, C4<0>, C4<0>;
+v0x637c68742dd0_0 .net "a", 0 0, L_0x637c68776920;  alias, 1 drivers
+v0x637c68742eb0_0 .net "b", 0 0, L_0x637c687769c0;  alias, 1 drivers
+v0x637c68742f70_0 .net "y", 0 0, L_0x637c68776710;  alias, 1 drivers
+S_0x637c68743410 .scope generate, "cmp[64]" "cmp[64]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c68743a00 .param/l "i" 1 3 15, +C4<01000000>;
+S_0x637c68743ac0 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c68743410;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c68744670_0 .net "a", 0 0, L_0x637c68777080;  1 drivers
+v0x637c68744740_0 .net "b", 0 0, L_0x637c68777120;  1 drivers
+v0x637c68744810_0 .net "equal", 0 0, L_0x637c68776f30;  1 drivers
+v0x637c68744910_0 .net "out1", 0 0, L_0x637c68776e70;  1 drivers
+S_0x637c68743d30 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c68743ac0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68776f30 .functor NOT 1, L_0x637c68776e70, C4<0>, C4<0>, C4<0>;
+v0x637c68743f90_0 .net "a", 0 0, L_0x637c68776e70;  alias, 1 drivers
+v0x637c68744070_0 .net "y", 0 0, L_0x637c68776f30;  alias, 1 drivers
+S_0x637c68744190 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c68743ac0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68776e70 .functor XOR 1, L_0x637c68777080, L_0x637c68777120, C4<0>, C4<0>;
+v0x637c687443c0_0 .net "a", 0 0, L_0x637c68777080;  alias, 1 drivers
+v0x637c687444a0_0 .net "b", 0 0, L_0x637c68777120;  alias, 1 drivers
+v0x637c68744560_0 .net "y", 0 0, L_0x637c68776e70;  alias, 1 drivers
+S_0x637c68744a00 .scope generate, "cmp[65]" "cmp[65]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c68744be0 .param/l "i" 1 3 15, +C4<01000001>;
+S_0x637c68744ca0 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c68744a00;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c68745850_0 .net "a", 0 0, L_0x637c687777f0;  1 drivers
+v0x637c68745920_0 .net "b", 0 0, L_0x637c68777890;  1 drivers
+v0x637c687459f0_0 .net "equal", 0 0, L_0x637c687776a0;  1 drivers
+v0x637c68745af0_0 .net "out1", 0 0, L_0x637c687775e0;  1 drivers
+S_0x637c68744f10 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c68744ca0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c687776a0 .functor NOT 1, L_0x637c687775e0, C4<0>, C4<0>, C4<0>;
+v0x637c68745170_0 .net "a", 0 0, L_0x637c687775e0;  alias, 1 drivers
+v0x637c68745250_0 .net "y", 0 0, L_0x637c687776a0;  alias, 1 drivers
+S_0x637c68745370 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c68744ca0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c687775e0 .functor XOR 1, L_0x637c687777f0, L_0x637c68777890, C4<0>, C4<0>;
+v0x637c687455a0_0 .net "a", 0 0, L_0x637c687777f0;  alias, 1 drivers
+v0x637c68745680_0 .net "b", 0 0, L_0x637c68777890;  alias, 1 drivers
+v0x637c68745740_0 .net "y", 0 0, L_0x637c687775e0;  alias, 1 drivers
+S_0x637c68745be0 .scope generate, "cmp[66]" "cmp[66]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c68745dc0 .param/l "i" 1 3 15, +C4<01000010>;
+S_0x637c68745e80 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c68745be0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c68746a30_0 .net "a", 0 0, L_0x637c68777450;  1 drivers
+v0x637c68746b00_0 .net "b", 0 0, L_0x637c687774f0;  1 drivers
+v0x637c68746bd0_0 .net "equal", 0 0, L_0x637c687772c0;  1 drivers
+v0x637c68746cd0_0 .net "out1", 0 0, L_0x637c687771c0;  1 drivers
+S_0x637c687460f0 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c68745e80;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c687772c0 .functor NOT 1, L_0x637c687771c0, C4<0>, C4<0>, C4<0>;
+v0x637c68746350_0 .net "a", 0 0, L_0x637c687771c0;  alias, 1 drivers
+v0x637c68746430_0 .net "y", 0 0, L_0x637c687772c0;  alias, 1 drivers
+S_0x637c68746550 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c68745e80;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c687771c0 .functor XOR 1, L_0x637c68777450, L_0x637c687774f0, C4<0>, C4<0>;
+v0x637c68746780_0 .net "a", 0 0, L_0x637c68777450;  alias, 1 drivers
+v0x637c68746860_0 .net "b", 0 0, L_0x637c687774f0;  alias, 1 drivers
+v0x637c68746920_0 .net "y", 0 0, L_0x637c687771c0;  alias, 1 drivers
+S_0x637c68746dc0 .scope generate, "cmp[67]" "cmp[67]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c68746fa0 .param/l "i" 1 3 15, +C4<01000011>;
+S_0x637c68747060 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c68746dc0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c68747c10_0 .net "a", 0 0, L_0x637c68777f30;  1 drivers
+v0x637c68747ce0_0 .net "b", 0 0, L_0x637c68777fd0;  1 drivers
+v0x637c68747db0_0 .net "equal", 0 0, L_0x637c68777de0;  1 drivers
+v0x637c68747eb0_0 .net "out1", 0 0, L_0x637c68777d70;  1 drivers
+S_0x637c687472d0 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c68747060;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68777de0 .functor NOT 1, L_0x637c68777d70, C4<0>, C4<0>, C4<0>;
+v0x637c68747530_0 .net "a", 0 0, L_0x637c68777d70;  alias, 1 drivers
+v0x637c68747610_0 .net "y", 0 0, L_0x637c68777de0;  alias, 1 drivers
+S_0x637c68747730 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c68747060;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68777d70 .functor XOR 1, L_0x637c68777f30, L_0x637c68777fd0, C4<0>, C4<0>;
+v0x637c68747960_0 .net "a", 0 0, L_0x637c68777f30;  alias, 1 drivers
+v0x637c68747a40_0 .net "b", 0 0, L_0x637c68777fd0;  alias, 1 drivers
+v0x637c68747b00_0 .net "y", 0 0, L_0x637c68777d70;  alias, 1 drivers
+S_0x637c68747fa0 .scope generate, "cmp[68]" "cmp[68]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c68748180 .param/l "i" 1 3 15, +C4<01000100>;
+S_0x637c68748240 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c68747fa0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c68748df0_0 .net "a", 0 0, L_0x637c68777bc0;  1 drivers
+v0x637c68748ec0_0 .net "b", 0 0, L_0x637c68777c60;  1 drivers
+v0x637c68748f90_0 .net "equal", 0 0, L_0x637c68777a30;  1 drivers
+v0x637c68749090_0 .net "out1", 0 0, L_0x637c68777930;  1 drivers
+S_0x637c687484b0 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c68748240;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68777a30 .functor NOT 1, L_0x637c68777930, C4<0>, C4<0>, C4<0>;
+v0x637c68748710_0 .net "a", 0 0, L_0x637c68777930;  alias, 1 drivers
+v0x637c687487f0_0 .net "y", 0 0, L_0x637c68777a30;  alias, 1 drivers
+S_0x637c68748910 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c68748240;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68777930 .functor XOR 1, L_0x637c68777bc0, L_0x637c68777c60, C4<0>, C4<0>;
+v0x637c68748b40_0 .net "a", 0 0, L_0x637c68777bc0;  alias, 1 drivers
+v0x637c68748c20_0 .net "b", 0 0, L_0x637c68777c60;  alias, 1 drivers
+v0x637c68748ce0_0 .net "y", 0 0, L_0x637c68777930;  alias, 1 drivers
+S_0x637c68749180 .scope generate, "cmp[69]" "cmp[69]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c68749360 .param/l "i" 1 3 15, +C4<01000101>;
+S_0x637c68749420 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c68749180;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c68749fd0_0 .net "a", 0 0, L_0x637c68778670;  1 drivers
+v0x637c6874a0a0_0 .net "b", 0 0, L_0x637c68778710;  1 drivers
+v0x637c6874a170_0 .net "equal", 0 0, L_0x637c68778520;  1 drivers
+v0x637c6874a270_0 .net "out1", 0 0, L_0x637c68777d00;  1 drivers
+S_0x637c68749690 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c68749420;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68778520 .functor NOT 1, L_0x637c68777d00, C4<0>, C4<0>, C4<0>;
+v0x637c687498f0_0 .net "a", 0 0, L_0x637c68777d00;  alias, 1 drivers
+v0x637c687499d0_0 .net "y", 0 0, L_0x637c68778520;  alias, 1 drivers
+S_0x637c68749af0 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c68749420;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68777d00 .functor XOR 1, L_0x637c68778670, L_0x637c68778710, C4<0>, C4<0>;
+v0x637c68749d20_0 .net "a", 0 0, L_0x637c68778670;  alias, 1 drivers
+v0x637c68749e00_0 .net "b", 0 0, L_0x637c68778710;  alias, 1 drivers
+v0x637c68749ec0_0 .net "y", 0 0, L_0x637c68777d00;  alias, 1 drivers
+S_0x637c6874a360 .scope generate, "cmp[70]" "cmp[70]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c6874a540 .param/l "i" 1 3 15, +C4<01000110>;
+S_0x637c6874a600 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c6874a360;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c6874b1b0_0 .net "a", 0 0, L_0x637c68778300;  1 drivers
+v0x637c6874b280_0 .net "b", 0 0, L_0x637c687783a0;  1 drivers
+v0x637c6874b350_0 .net "equal", 0 0, L_0x637c68778170;  1 drivers
+v0x637c6874b450_0 .net "out1", 0 0, L_0x637c68778070;  1 drivers
+S_0x637c6874a870 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c6874a600;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68778170 .functor NOT 1, L_0x637c68778070, C4<0>, C4<0>, C4<0>;
+v0x637c6874aad0_0 .net "a", 0 0, L_0x637c68778070;  alias, 1 drivers
+v0x637c6874abb0_0 .net "y", 0 0, L_0x637c68778170;  alias, 1 drivers
+S_0x637c6874acd0 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c6874a600;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68778070 .functor XOR 1, L_0x637c68778300, L_0x637c687783a0, C4<0>, C4<0>;
+v0x637c6874af00_0 .net "a", 0 0, L_0x637c68778300;  alias, 1 drivers
+v0x637c6874afe0_0 .net "b", 0 0, L_0x637c687783a0;  alias, 1 drivers
+v0x637c6874b0a0_0 .net "y", 0 0, L_0x637c68778070;  alias, 1 drivers
+S_0x637c6874b540 .scope generate, "cmp[71]" "cmp[71]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c6874b720 .param/l "i" 1 3 15, +C4<01000111>;
+S_0x637c6874b7e0 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c6874b540;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c6874c390_0 .net "a", 0 0, L_0x637c68778dd0;  1 drivers
+v0x637c6874c460_0 .net "b", 0 0, L_0x637c68778e70;  1 drivers
+v0x637c6874c530_0 .net "equal", 0 0, L_0x637c68778c80;  1 drivers
+v0x637c6874c630_0 .net "out1", 0 0, L_0x637c68778440;  1 drivers
+S_0x637c6874ba50 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c6874b7e0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68778c80 .functor NOT 1, L_0x637c68778440, C4<0>, C4<0>, C4<0>;
+v0x637c6874bcb0_0 .net "a", 0 0, L_0x637c68778440;  alias, 1 drivers
+v0x637c6874bd90_0 .net "y", 0 0, L_0x637c68778c80;  alias, 1 drivers
+S_0x637c6874beb0 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c6874b7e0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68778440 .functor XOR 1, L_0x637c68778dd0, L_0x637c68778e70, C4<0>, C4<0>;
+v0x637c6874c0e0_0 .net "a", 0 0, L_0x637c68778dd0;  alias, 1 drivers
+v0x637c6874c1c0_0 .net "b", 0 0, L_0x637c68778e70;  alias, 1 drivers
+v0x637c6874c280_0 .net "y", 0 0, L_0x637c68778440;  alias, 1 drivers
+S_0x637c6874c720 .scope generate, "cmp[72]" "cmp[72]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c6874c900 .param/l "i" 1 3 15, +C4<01001000>;
+S_0x637c6874c9c0 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c6874c720;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c6874d570_0 .net "a", 0 0, L_0x637c68778a40;  1 drivers
+v0x637c6874d640_0 .net "b", 0 0, L_0x637c68778ae0;  1 drivers
+v0x637c6874d710_0 .net "equal", 0 0, L_0x637c687788b0;  1 drivers
+v0x637c6874d810_0 .net "out1", 0 0, L_0x637c687787b0;  1 drivers
+S_0x637c6874cc30 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c6874c9c0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c687788b0 .functor NOT 1, L_0x637c687787b0, C4<0>, C4<0>, C4<0>;
+v0x637c6874ce90_0 .net "a", 0 0, L_0x637c687787b0;  alias, 1 drivers
+v0x637c6874cf70_0 .net "y", 0 0, L_0x637c687788b0;  alias, 1 drivers
+S_0x637c6874d090 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c6874c9c0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c687787b0 .functor XOR 1, L_0x637c68778a40, L_0x637c68778ae0, C4<0>, C4<0>;
+v0x637c6874d2c0_0 .net "a", 0 0, L_0x637c68778a40;  alias, 1 drivers
+v0x637c6874d3a0_0 .net "b", 0 0, L_0x637c68778ae0;  alias, 1 drivers
+v0x637c6874d460_0 .net "y", 0 0, L_0x637c687787b0;  alias, 1 drivers
+S_0x637c6874d900 .scope generate, "cmp[73]" "cmp[73]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c6874dae0 .param/l "i" 1 3 15, +C4<01001001>;
+S_0x637c6874dba0 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c6874d900;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c6874e750_0 .net "a", 0 0, L_0x637c68779550;  1 drivers
+v0x637c6874e820_0 .net "b", 0 0, L_0x637c687795f0;  1 drivers
+v0x637c6874e8f0_0 .net "equal", 0 0, L_0x637c68779400;  1 drivers
+v0x637c6874e9f0_0 .net "out1", 0 0, L_0x637c68778b80;  1 drivers
+S_0x637c6874de10 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c6874dba0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68779400 .functor NOT 1, L_0x637c68778b80, C4<0>, C4<0>, C4<0>;
+v0x637c6874e070_0 .net "a", 0 0, L_0x637c68778b80;  alias, 1 drivers
+v0x637c6874e150_0 .net "y", 0 0, L_0x637c68779400;  alias, 1 drivers
+S_0x637c6874e270 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c6874dba0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68778b80 .functor XOR 1, L_0x637c68779550, L_0x637c687795f0, C4<0>, C4<0>;
+v0x637c6874e4a0_0 .net "a", 0 0, L_0x637c68779550;  alias, 1 drivers
+v0x637c6874e580_0 .net "b", 0 0, L_0x637c687795f0;  alias, 1 drivers
+v0x637c6874e640_0 .net "y", 0 0, L_0x637c68778b80;  alias, 1 drivers
+S_0x637c6874eae0 .scope generate, "cmp[74]" "cmp[74]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c6874ecc0 .param/l "i" 1 3 15, +C4<01001010>;
+S_0x637c6874ed80 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c6874eae0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c6874f930_0 .net "a", 0 0, L_0x637c687791a0;  1 drivers
+v0x637c6874fa00_0 .net "b", 0 0, L_0x637c68779240;  1 drivers
+v0x637c6874fad0_0 .net "equal", 0 0, L_0x637c68779010;  1 drivers
+v0x637c6874fbd0_0 .net "out1", 0 0, L_0x637c68778f10;  1 drivers
+S_0x637c6874eff0 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c6874ed80;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68779010 .functor NOT 1, L_0x637c68778f10, C4<0>, C4<0>, C4<0>;
+v0x637c6874f250_0 .net "a", 0 0, L_0x637c68778f10;  alias, 1 drivers
+v0x637c6874f330_0 .net "y", 0 0, L_0x637c68779010;  alias, 1 drivers
+S_0x637c6874f450 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c6874ed80;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68778f10 .functor XOR 1, L_0x637c687791a0, L_0x637c68779240, C4<0>, C4<0>;
+v0x637c6874f680_0 .net "a", 0 0, L_0x637c687791a0;  alias, 1 drivers
+v0x637c6874f760_0 .net "b", 0 0, L_0x637c68779240;  alias, 1 drivers
+v0x637c6874f820_0 .net "y", 0 0, L_0x637c68778f10;  alias, 1 drivers
+S_0x637c6874fcc0 .scope generate, "cmp[75]" "cmp[75]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c6874fea0 .param/l "i" 1 3 15, +C4<01001011>;
+S_0x637c6874ff60 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c6874fcc0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c68750b10_0 .net "a", 0 0, L_0x637c68779cf0;  1 drivers
+v0x637c68750be0_0 .net "b", 0 0, L_0x637c68779d90;  1 drivers
+v0x637c68750cb0_0 .net "equal", 0 0, L_0x637c68779ba0;  1 drivers
+v0x637c68750db0_0 .net "out1", 0 0, L_0x637c687792e0;  1 drivers
+S_0x637c687501d0 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c6874ff60;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68779ba0 .functor NOT 1, L_0x637c687792e0, C4<0>, C4<0>, C4<0>;
+v0x637c68750430_0 .net "a", 0 0, L_0x637c687792e0;  alias, 1 drivers
+v0x637c68750510_0 .net "y", 0 0, L_0x637c68779ba0;  alias, 1 drivers
+S_0x637c68750630 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c6874ff60;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c687792e0 .functor XOR 1, L_0x637c68779cf0, L_0x637c68779d90, C4<0>, C4<0>;
+v0x637c68750860_0 .net "a", 0 0, L_0x637c68779cf0;  alias, 1 drivers
+v0x637c68750940_0 .net "b", 0 0, L_0x637c68779d90;  alias, 1 drivers
+v0x637c68750a00_0 .net "y", 0 0, L_0x637c687792e0;  alias, 1 drivers
+S_0x637c68750ea0 .scope generate, "cmp[76]" "cmp[76]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c68751080 .param/l "i" 1 3 15, +C4<01001100>;
+S_0x637c68751140 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c68750ea0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c68751cf0_0 .net "a", 0 0, L_0x637c68779920;  1 drivers
+v0x637c68751dc0_0 .net "b", 0 0, L_0x637c687799c0;  1 drivers
+v0x637c68751e90_0 .net "equal", 0 0, L_0x637c68779790;  1 drivers
+v0x637c68751f90_0 .net "out1", 0 0, L_0x637c68779690;  1 drivers
+S_0x637c687513b0 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c68751140;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68779790 .functor NOT 1, L_0x637c68779690, C4<0>, C4<0>, C4<0>;
+v0x637c68751610_0 .net "a", 0 0, L_0x637c68779690;  alias, 1 drivers
+v0x637c687516f0_0 .net "y", 0 0, L_0x637c68779790;  alias, 1 drivers
+S_0x637c68751810 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c68751140;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68779690 .functor XOR 1, L_0x637c68779920, L_0x637c687799c0, C4<0>, C4<0>;
+v0x637c68751a40_0 .net "a", 0 0, L_0x637c68779920;  alias, 1 drivers
+v0x637c68751b20_0 .net "b", 0 0, L_0x637c687799c0;  alias, 1 drivers
+v0x637c68751be0_0 .net "y", 0 0, L_0x637c68779690;  alias, 1 drivers
+S_0x637c68752080 .scope generate, "cmp[77]" "cmp[77]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c68752260 .param/l "i" 1 3 15, +C4<01001101>;
+S_0x637c68752320 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c68752080;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c68752ed0_0 .net "a", 0 0, L_0x637c6877a460;  1 drivers
+v0x637c68752fa0_0 .net "b", 0 0, L_0x637c6877a500;  1 drivers
+v0x637c68753070_0 .net "equal", 0 0, L_0x637c6877a310;  1 drivers
+v0x637c68753170_0 .net "out1", 0 0, L_0x637c68779a60;  1 drivers
+S_0x637c68752590 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c68752320;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c6877a310 .functor NOT 1, L_0x637c68779a60, C4<0>, C4<0>, C4<0>;
+v0x637c687527f0_0 .net "a", 0 0, L_0x637c68779a60;  alias, 1 drivers
+v0x637c687528d0_0 .net "y", 0 0, L_0x637c6877a310;  alias, 1 drivers
+S_0x637c687529f0 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c68752320;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68779a60 .functor XOR 1, L_0x637c6877a460, L_0x637c6877a500, C4<0>, C4<0>;
+v0x637c68752c20_0 .net "a", 0 0, L_0x637c6877a460;  alias, 1 drivers
+v0x637c68752d00_0 .net "b", 0 0, L_0x637c6877a500;  alias, 1 drivers
+v0x637c68752dc0_0 .net "y", 0 0, L_0x637c68779a60;  alias, 1 drivers
+S_0x637c68753260 .scope generate, "cmp[78]" "cmp[78]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c68753440 .param/l "i" 1 3 15, +C4<01001110>;
+S_0x637c68753500 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c68753260;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c687540b0_0 .net "a", 0 0, L_0x637c6877a0c0;  1 drivers
+v0x637c68754180_0 .net "b", 0 0, L_0x637c6877a160;  1 drivers
+v0x637c68754250_0 .net "equal", 0 0, L_0x637c68779f30;  1 drivers
+v0x637c68754350_0 .net "out1", 0 0, L_0x637c68779e30;  1 drivers
+S_0x637c68753770 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c68753500;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c68779f30 .functor NOT 1, L_0x637c68779e30, C4<0>, C4<0>, C4<0>;
+v0x637c687539d0_0 .net "a", 0 0, L_0x637c68779e30;  alias, 1 drivers
+v0x637c68753ab0_0 .net "y", 0 0, L_0x637c68779f30;  alias, 1 drivers
+S_0x637c68753bd0 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c68753500;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c68779e30 .functor XOR 1, L_0x637c6877a0c0, L_0x637c6877a160, C4<0>, C4<0>;
+v0x637c68753e00_0 .net "a", 0 0, L_0x637c6877a0c0;  alias, 1 drivers
+v0x637c68753ee0_0 .net "b", 0 0, L_0x637c6877a160;  alias, 1 drivers
+v0x637c68753fa0_0 .net "y", 0 0, L_0x637c68779e30;  alias, 1 drivers
+S_0x637c68754440 .scope generate, "cmp[79]" "cmp[79]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c68754620 .param/l "i" 1 3 15, +C4<01001111>;
+S_0x637c687546e0 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c68754440;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c68755290_0 .net "a", 0 0, L_0x637c6877abf0;  1 drivers
+v0x637c68755360_0 .net "b", 0 0, L_0x637c6877ac90;  1 drivers
+v0x637c68755430_0 .net "equal", 0 0, L_0x637c6877aaa0;  1 drivers
+v0x637c68755530_0 .net "out1", 0 0, L_0x637c6877a200;  1 drivers
+S_0x637c68754950 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c687546e0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c6877aaa0 .functor NOT 1, L_0x637c6877a200, C4<0>, C4<0>, C4<0>;
+v0x637c68754bb0_0 .net "a", 0 0, L_0x637c6877a200;  alias, 1 drivers
+v0x637c68754c90_0 .net "y", 0 0, L_0x637c6877aaa0;  alias, 1 drivers
+S_0x637c68754db0 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c687546e0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c6877a200 .functor XOR 1, L_0x637c6877abf0, L_0x637c6877ac90, C4<0>, C4<0>;
+v0x637c68754fe0_0 .net "a", 0 0, L_0x637c6877abf0;  alias, 1 drivers
+v0x637c687550c0_0 .net "b", 0 0, L_0x637c6877ac90;  alias, 1 drivers
+v0x637c68755180_0 .net "y", 0 0, L_0x637c6877a200;  alias, 1 drivers
+S_0x637c68755620 .scope generate, "cmp[80]" "cmp[80]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c68755800 .param/l "i" 1 3 15, +C4<01010000>;
+S_0x637c687558c0 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c68755620;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c68756470_0 .net "a", 0 0, L_0x637c6877a830;  1 drivers
+v0x637c68756540_0 .net "b", 0 0, L_0x637c6877a8d0;  1 drivers
+v0x637c68756610_0 .net "equal", 0 0, L_0x637c6877a6a0;  1 drivers
+v0x637c68756710_0 .net "out1", 0 0, L_0x637c6877a5a0;  1 drivers
+S_0x637c68755b30 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c687558c0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c6877a6a0 .functor NOT 1, L_0x637c6877a5a0, C4<0>, C4<0>, C4<0>;
+v0x637c68755d90_0 .net "a", 0 0, L_0x637c6877a5a0;  alias, 1 drivers
+v0x637c68755e70_0 .net "y", 0 0, L_0x637c6877a6a0;  alias, 1 drivers
+S_0x637c68755f90 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c687558c0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c6877a5a0 .functor XOR 1, L_0x637c6877a830, L_0x637c6877a8d0, C4<0>, C4<0>;
+v0x637c687561c0_0 .net "a", 0 0, L_0x637c6877a830;  alias, 1 drivers
+v0x637c687562a0_0 .net "b", 0 0, L_0x637c6877a8d0;  alias, 1 drivers
+v0x637c68756360_0 .net "y", 0 0, L_0x637c6877a5a0;  alias, 1 drivers
+S_0x637c68756800 .scope generate, "cmp[81]" "cmp[81]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c687569e0 .param/l "i" 1 3 15, +C4<01010001>;
+S_0x637c68756aa0 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c68756800;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c68757650_0 .net "a", 0 0, L_0x637c6877b3a0;  1 drivers
+v0x637c68757720_0 .net "b", 0 0, L_0x637c6877b440;  1 drivers
+v0x637c687577f0_0 .net "equal", 0 0, L_0x637c6877b250;  1 drivers
+v0x637c687578f0_0 .net "out1", 0 0, L_0x637c6877a970;  1 drivers
+S_0x637c68756d10 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c68756aa0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c6877b250 .functor NOT 1, L_0x637c6877a970, C4<0>, C4<0>, C4<0>;
+v0x637c68756f70_0 .net "a", 0 0, L_0x637c6877a970;  alias, 1 drivers
+v0x637c68757050_0 .net "y", 0 0, L_0x637c6877b250;  alias, 1 drivers
+S_0x637c68757170 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c68756aa0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c6877a970 .functor XOR 1, L_0x637c6877b3a0, L_0x637c6877b440, C4<0>, C4<0>;
+v0x637c687573a0_0 .net "a", 0 0, L_0x637c6877b3a0;  alias, 1 drivers
+v0x637c68757480_0 .net "b", 0 0, L_0x637c6877b440;  alias, 1 drivers
+v0x637c68757540_0 .net "y", 0 0, L_0x637c6877a970;  alias, 1 drivers
+S_0x637c687579e0 .scope generate, "cmp[82]" "cmp[82]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c68757bc0 .param/l "i" 1 3 15, +C4<01010010>;
+S_0x637c68757c80 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c687579e0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c68758830_0 .net "a", 0 0, L_0x637c6877afc0;  1 drivers
+v0x637c68758900_0 .net "b", 0 0, L_0x637c6877b060;  1 drivers
+v0x637c687589d0_0 .net "equal", 0 0, L_0x637c6877ae30;  1 drivers
+v0x637c68758ad0_0 .net "out1", 0 0, L_0x637c6877ad30;  1 drivers
+S_0x637c68757ef0 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c68757c80;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c6877ae30 .functor NOT 1, L_0x637c6877ad30, C4<0>, C4<0>, C4<0>;
+v0x637c68758150_0 .net "a", 0 0, L_0x637c6877ad30;  alias, 1 drivers
+v0x637c68758230_0 .net "y", 0 0, L_0x637c6877ae30;  alias, 1 drivers
+S_0x637c68758350 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c68757c80;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c6877ad30 .functor XOR 1, L_0x637c6877afc0, L_0x637c6877b060, C4<0>, C4<0>;
+v0x637c68758580_0 .net "a", 0 0, L_0x637c6877afc0;  alias, 1 drivers
+v0x637c68758660_0 .net "b", 0 0, L_0x637c6877b060;  alias, 1 drivers
+v0x637c68758720_0 .net "y", 0 0, L_0x637c6877ad30;  alias, 1 drivers
+S_0x637c68758bc0 .scope generate, "cmp[83]" "cmp[83]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c68758da0 .param/l "i" 1 3 15, +C4<01010011>;
+S_0x637c68758e60 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c68758bc0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c68759a10_0 .net "a", 0 0, L_0x637c6877bb20;  1 drivers
+v0x637c68759ae0_0 .net "b", 0 0, L_0x637c6877bbc0;  1 drivers
+v0x637c68759bb0_0 .net "equal", 0 0, L_0x637c6877ba20;  1 drivers
+v0x637c68759cb0_0 .net "out1", 0 0, L_0x637c6877b100;  1 drivers
+S_0x637c687590d0 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c68758e60;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c6877ba20 .functor NOT 1, L_0x637c6877b100, C4<0>, C4<0>, C4<0>;
+v0x637c68759330_0 .net "a", 0 0, L_0x637c6877b100;  alias, 1 drivers
+v0x637c68759410_0 .net "y", 0 0, L_0x637c6877ba20;  alias, 1 drivers
+S_0x637c68759530 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c68758e60;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c6877b100 .functor XOR 1, L_0x637c6877bb20, L_0x637c6877bbc0, C4<0>, C4<0>;
+v0x637c68759760_0 .net "a", 0 0, L_0x637c6877bb20;  alias, 1 drivers
+v0x637c68759840_0 .net "b", 0 0, L_0x637c6877bbc0;  alias, 1 drivers
+v0x637c68759900_0 .net "y", 0 0, L_0x637c6877b100;  alias, 1 drivers
+S_0x637c68759da0 .scope generate, "cmp[84]" "cmp[84]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c68759f80 .param/l "i" 1 3 15, +C4<01010100>;
+S_0x637c6875a040 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c68759da0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c6875abf0_0 .net "a", 0 0, L_0x637c6877b770;  1 drivers
+v0x637c6875acc0_0 .net "b", 0 0, L_0x637c6877b810;  1 drivers
+v0x637c6875ad90_0 .net "equal", 0 0, L_0x637c6877b5e0;  1 drivers
+v0x637c6875ae90_0 .net "out1", 0 0, L_0x637c6877b4e0;  1 drivers
+S_0x637c6875a2b0 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c6875a040;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c6877b5e0 .functor NOT 1, L_0x637c6877b4e0, C4<0>, C4<0>, C4<0>;
+v0x637c6875a510_0 .net "a", 0 0, L_0x637c6877b4e0;  alias, 1 drivers
+v0x637c6875a5f0_0 .net "y", 0 0, L_0x637c6877b5e0;  alias, 1 drivers
+S_0x637c6875a710 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c6875a040;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c6877b4e0 .functor XOR 1, L_0x637c6877b770, L_0x637c6877b810, C4<0>, C4<0>;
+v0x637c6875a940_0 .net "a", 0 0, L_0x637c6877b770;  alias, 1 drivers
+v0x637c6875aa20_0 .net "b", 0 0, L_0x637c6877b810;  alias, 1 drivers
+v0x637c6875aae0_0 .net "y", 0 0, L_0x637c6877b4e0;  alias, 1 drivers
+S_0x637c6875af80 .scope generate, "cmp[85]" "cmp[85]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c6875b160 .param/l "i" 1 3 15, +C4<01010101>;
+S_0x637c6875b220 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c6875af80;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c6875bdd0_0 .net "a", 0 0, L_0x637c6877c2a0;  1 drivers
+v0x637c6875bea0_0 .net "b", 0 0, L_0x637c6877c340;  1 drivers
+v0x637c6875bf70_0 .net "equal", 0 0, L_0x637c6877b9b0;  1 drivers
+v0x637c6875c070_0 .net "out1", 0 0, L_0x637c6877b8b0;  1 drivers
+S_0x637c6875b490 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c6875b220;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c6877b9b0 .functor NOT 1, L_0x637c6877b8b0, C4<0>, C4<0>, C4<0>;
+v0x637c6875b6f0_0 .net "a", 0 0, L_0x637c6877b8b0;  alias, 1 drivers
+v0x637c6875b7d0_0 .net "y", 0 0, L_0x637c6877b9b0;  alias, 1 drivers
+S_0x637c6875b8f0 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c6875b220;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c6877b8b0 .functor XOR 1, L_0x637c6877c2a0, L_0x637c6877c340, C4<0>, C4<0>;
+v0x637c6875bb20_0 .net "a", 0 0, L_0x637c6877c2a0;  alias, 1 drivers
+v0x637c6875bc00_0 .net "b", 0 0, L_0x637c6877c340;  alias, 1 drivers
+v0x637c6875bcc0_0 .net "y", 0 0, L_0x637c6877b8b0;  alias, 1 drivers
+S_0x637c6875c160 .scope generate, "cmp[86]" "cmp[86]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c6875c340 .param/l "i" 1 3 15, +C4<01010110>;
+S_0x637c6875c400 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c6875c160;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c6875cfb0_0 .net "a", 0 0, L_0x637c6877bef0;  1 drivers
+v0x637c6875d080_0 .net "b", 0 0, L_0x637c6877bf90;  1 drivers
+v0x637c6875d150_0 .net "equal", 0 0, L_0x637c6877bd60;  1 drivers
+v0x637c6875d250_0 .net "out1", 0 0, L_0x637c6877bc60;  1 drivers
+S_0x637c6875c670 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c6875c400;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c6877bd60 .functor NOT 1, L_0x637c6877bc60, C4<0>, C4<0>, C4<0>;
+v0x637c6875c8d0_0 .net "a", 0 0, L_0x637c6877bc60;  alias, 1 drivers
+v0x637c6875c9b0_0 .net "y", 0 0, L_0x637c6877bd60;  alias, 1 drivers
+S_0x637c6875cad0 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c6875c400;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c6877bc60 .functor XOR 1, L_0x637c6877bef0, L_0x637c6877bf90, C4<0>, C4<0>;
+v0x637c6875cd00_0 .net "a", 0 0, L_0x637c6877bef0;  alias, 1 drivers
+v0x637c6875cde0_0 .net "b", 0 0, L_0x637c6877bf90;  alias, 1 drivers
+v0x637c6875cea0_0 .net "y", 0 0, L_0x637c6877bc60;  alias, 1 drivers
+S_0x637c6875d340 .scope generate, "cmp[87]" "cmp[87]" 3 15, 3 15 0, S_0x637c68705600;
+ .timescale -12 -12;
+P_0x637c6875d520 .param/l "i" 1 3 15, +C4<01010111>;
+S_0x637c6875d5e0 .scope module, "u_cmp" "comparator_1bit" 3 16, 4 4 0, S_0x637c6875d340;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "equal";
+v0x637c6875e190_0 .net "a", 0 0, L_0x637c6877ca40;  1 drivers
+v0x637c6875e260_0 .net "b", 0 0, L_0x637c6877cae0;  1 drivers
+v0x637c6875e330_0 .net "equal", 0 0, L_0x637c6877c130;  1 drivers
+v0x637c6875e430_0 .net "out1", 0 0, L_0x637c6877c030;  1 drivers
+S_0x637c6875d850 .scope module, "not1" "not_gate" 4 15, 5 1 0, S_0x637c6875d5e0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 1 "y";
+L_0x637c6877c130 .functor NOT 1, L_0x637c6877c030, C4<0>, C4<0>, C4<0>;
+v0x637c6875dab0_0 .net "a", 0 0, L_0x637c6877c030;  alias, 1 drivers
+v0x637c6875db90_0 .net "y", 0 0, L_0x637c6877c130;  alias, 1 drivers
+S_0x637c6875dcb0 .scope module, "xor1" "xor_gate" 4 10, 6 1 0, S_0x637c6875d5e0;
+ .timescale -12 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "y";
+L_0x637c6877c030 .functor XOR 1, L_0x637c6877ca40, L_0x637c6877cae0, C4<0>, C4<0>;
+v0x637c6875dee0_0 .net "a", 0 0, L_0x637c6877ca40;  alias, 1 drivers
+v0x637c6875dfc0_0 .net "b", 0 0, L_0x637c6877cae0;  alias, 1 drivers
+v0x637c6875e080_0 .net "y", 0 0, L_0x637c6877c030;  alias, 1 drivers
+    .scope S_0x637c6870e200;
+T_0 ;
+    %vpi_call 2 19 "$display", "===== Comparator Test =====" {0 0 0};
+    %pushi/vec4 3232235786, 0, 32;
+    %concati/vec4 2684354640, 0, 36;
+    %concati/vec4 393296, 0, 20;
+    %store/vec4 v0x637c6875e8e0_0, 0, 88;
+    %load/vec4 v0x637c6875e8e0_0;
+    %store/vec4 v0x637c6875e9d0_0, 0, 88;
+    %delay 10, 0;
+    %load/vec4 v0x637c6875eaa0_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_0.0, 8;
+    %vpi_call 2 37 "$display", "CASE 1 pass" {0 0 0};
+    %jmp T_0.1;
+T_0.0 ;
+    %vpi_call 2 39 "$display", "CASE 1 fail" {0 0 0};
+T_0.1 ;
+    %pushi/vec4 3232235786, 0, 32;
+    %concati/vec4 2684354640, 0, 36;
+    %concati/vec4 393297, 0, 20;
+    %store/vec4 v0x637c6875e9d0_0, 0, 88;
+    %delay 10, 0;
+    %load/vec4 v0x637c6875eaa0_0;
+    %cmpi/e 0, 0, 1;
+    %jmp/0xz  T_0.2, 4;
+    %vpi_call 2 57 "$display", "CASE 1 pass" {0 0 0};
+    %jmp T_0.3;
+T_0.2 ;
+    %vpi_call 2 59 "$display", "CASE 1 fail" {0 0 0};
+T_0.3 ;
+    %pushi/vec4 3232235787, 0, 32;
+    %concati/vec4 2684354640, 0, 36;
+    %concati/vec4 393296, 0, 20;
+    %store/vec4 v0x637c6875e9d0_0, 0, 88;
+    %delay 10, 0;
+    %load/vec4 v0x637c6875eaa0_0;
+    %cmpi/e 0, 0, 1;
+    %jmp/0xz  T_0.4, 4;
+    %vpi_call 2 77 "$display", "CASE 3 pass" {0 0 0};
+    %jmp T_0.5;
+T_0.4 ;
+    %vpi_call 2 79 "$display", "CASE 3 fail" {0 0 0};
+T_0.5 ;
+    %pushi/vec4 0, 0, 88;
+    %store/vec4 v0x637c6875e8e0_0, 0, 88;
+    %pushi/vec4 0, 0, 88;
+    %store/vec4 v0x637c6875e9d0_0, 0, 88;
+    %delay 10, 0;
+    %load/vec4 v0x637c6875eaa0_0;
+    %cmpi/e 1, 0, 1;
+    %jmp/0xz  T_0.6, 4;
+    %vpi_call 2 91 "$display", "CASE 4 PASS" {0 0 0};
+    %jmp T_0.7;
+T_0.6 ;
+    %vpi_call 2 93 "$display", "CASE 4 FAIL" {0 0 0};
+T_0.7 ;
+    %vpi_call 2 95 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 7;
+    "N/A";
+    "<interactive>";
+    "tb/comparator_nbit_tb.v";
+    "./rtl/comparator_nbit.v";
+    "./rtl/comparator_1bit.v";
+    "./rtl/not_gate.v";
+    "./rtl/xor_gate.v";
